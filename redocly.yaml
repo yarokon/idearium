@@ -7,6 +7,8 @@ theme:
     items: 
       - page: /idearium-catalog/
         label: Catalog
+      - page: /idearium-catalog/scorecard/
+        label: Scorecard
   catalog:
     idearium-catalog:
       title: Idearium APIs catalog
@@ -25,3 +27,30 @@ theme:
           flatten: true
           includeByMetadata:
             type: [openapi]
+  scorecard:
+    levels: 
+      - name: Baseline
+        extends:
+          - minimal
+        # rules:
+        #   {etc}
+      - name: Silver
+        extends:
+          - recommended
+          # rules:
+          #   {etc}
+      - name: Gold
+        extends:
+          - recommended
+        rules:
+          info-description: off
+    targets:
+      - where:
+          metadata: 
+            l0: Distribution
+            publishDateRange: 2021-01-01T00:00:00Z/2022-01-01
+        minimumLevel: Silver
+    teamMetadataProperty:
+      property: crew-name
+      label: Crew
+      default: No Crew
