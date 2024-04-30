@@ -1,0 +1,27 @@
+theme:
+  logo: 
+    srcSet: "./images/logo-white.svg light, ./images/logo-black.svg dark"
+    altText: logo
+    link: /
+  navbar:
+    items: 
+      - page: /idearium-catalog/
+        label: Catalog
+  catalog:
+    idearium-catalog:
+      title: Idearium APIs catalog
+      description: 'This is the Idearium APIs Catalog'
+      slug: /idearium-catalog/
+      filters:
+        - title: API Category
+          property: category
+          missingCategoryName: Other
+        - title: Team
+          property: team
+          missingCategoryName: No team
+      groupByFirstFilter: true
+      items:
+        - directory: ./openapi
+          flatten: true
+          includeByMetadata:
+            type: [openapi]
