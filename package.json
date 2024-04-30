@@ -1,0 +1,16 @@
+{
+  "name": "Training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "realm develop",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@redocly/realm": "0.81.2-rc.2"
+  }
+}
