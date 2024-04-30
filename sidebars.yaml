@@ -5,6 +5,8 @@
 - group: Museum API
   menuStyle: drilldown
   items:
+    - page: ./openapi/museum-guide.md
+      label: Getting started
     - page: ./openapi/museum.yaml
     - page: ./openapi/changelog.md
       label: Changelog
