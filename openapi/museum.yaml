@@ -203,9 +203,9 @@ paths:
         '404':
           $ref: '#/components/responses/NotFound'
   /tickets/{ticketId}/:
-    delete:
+    put:
       summary: Refund of museum tickets 
-      description: Refund of museum tickets.
+      description: Allow to refund museum tickets.
       operationId: refundMuseumTickets
       tags:
         - Tickets
