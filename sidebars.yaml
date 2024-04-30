@@ -1,3 +1,21 @@
 - page: index.md
 - page: information-architecture.md
 - page: api-comparison.md
+  label: APIs comparison
+- group: Museum API
+  menuStyle: drilldown
+  items:
+    - page: ./openapi/museum.yaml
+    - page: ./openapi/changelog.md
+      label: Changelog
+- group: Petstore API
+  menuStyle: drilldown
+  items:
+    - page: ./openapi/petstore.yaml
+    - page: ./openapi/changelog.md
+      label: Changelog
+- group: Train travel API
+  menuStyle: drilldown
+  items:
+    - page: ./openapi/train-travel.yaml
+
