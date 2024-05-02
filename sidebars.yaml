@@ -1,5 +1,6 @@
 - page: index.md
 - page: information-architecture.md
+- page: experience-review.md
 - page: api-comparison.md
   label: APIs comparison
 - group: Museum API
