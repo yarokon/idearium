@@ -54,3 +54,8 @@ theme:
       property: crew-name
       label: Crew
       default: No Crew
+  feedback:
+    type: comment
+    settings: 
+      label: Share your feedback with us
+        
