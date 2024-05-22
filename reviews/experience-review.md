@@ -1,6 +1,6 @@
 # Review of Our Experience
 
-Working with three different APIs ([Petstore](/openapi/petsstore/), [Museum](/openapi/museum/) and [Train Travel](/openapi/train-travel/)) was an interesting and challenging experience. Each of them has its own unique features and capabilities. What we enjoyed most was learning their functionality and using them to create a our website.
+Working with three different APIs ([Petstore](/openapi/petstore/), [Museum](/openapi/museum/) and [Train Travel](/openapi/train-travel/)) was an interesting and challenging experience. Each of them has its own unique features and capabilities. What we enjoyed most was learning their functionality and using them to create a our website.
 
 ## Perception of information architecture
 
