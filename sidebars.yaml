@@ -1,6 +1,5 @@
 - page: index.md
 - page: information-architecture.md
-- page: experience-review.md
 - page: api-comparison.md
   label: APIs comparison
 - group: Museum API
@@ -21,4 +20,8 @@
   menuStyle: drilldown
   items:
     - page: ./openapi/train-travel.yaml
+- group: Reviews
+  items:
+    - page: ./reviews/experience-review.md
+    - page: ./reviews/training-3-debrief.md
 
