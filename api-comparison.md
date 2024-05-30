@@ -1,3 +1,5 @@
+{% partial file="/_partials/danger-admonition.md" /%}
+
 ## Comparison for Museum API, Petstore API and Train travel API
 
 We compared these APIs by rules that provide Redocly CLI and also added links to our scorecard baseline checks.

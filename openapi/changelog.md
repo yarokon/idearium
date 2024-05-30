@@ -1,3 +1,5 @@
+{% partial file="/_partials/danger-admonition.md" /%}
+
 ## Museum API changelog
 
 All notable changes to the Museum API will be documented in this file.
