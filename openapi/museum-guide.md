@@ -1,3 +1,5 @@
+{% partial file="/_partials/danger-admonition.md" /%}
+
 # Getting Started with the Museum API
 
 Welcome to the Museum API! This guide will help you start using our API quickly.

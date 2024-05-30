@@ -1,3 +1,5 @@
+{% partial file="/_partials/danger-admonition.md" /%}
+
 # Training 4 debrief
 
 We started from reverting our previous training steps. 

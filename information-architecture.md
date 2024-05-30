@@ -1,3 +1,5 @@
+{% partial file="/_partials/danger-admonition.md" /%}
+
 # Why we created this information architecture
 
 ### Conclusion

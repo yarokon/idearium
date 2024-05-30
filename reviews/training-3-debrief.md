@@ -1,3 +1,5 @@
+{% partial file="/_partials/danger-admonition.md" /%}
+
 ## Project 3 debrief
 
 ### Update Realm
