@@ -1,0 +1,231 @@
+openapi: 3.1.0
+info: 
+  title: Kitchen API
+  version: 1.0.0
+paths:
+  /ingredients:
+    post:
+      tags:
+        - ingredient
+      requestBody:
+        content:
+          application/json:
+            schema: 
+              type: object
+              properties:
+                kitchenId:
+                  type: string
+                  examples:
+                    - altman-family
+                name:
+                  type: string
+                  examples:
+                    - broccoli
+                quantity:
+                  type: number
+                  examples:
+                    - 1.5
+                unit:
+                  type: string
+                  examples:
+                    - cups
+                useBefore:
+                  type: string
+                  examples:
+                    - '2019-08-24T14:15:22Z'
+                  format: date-time
+              additionalProperties: false
+      responses:
+        '201':
+          description: Success
+          content: 
+            application/json:
+              schema: 
+                type: object
+                properties:
+                  id:
+                    type: string
+                    examples:
+                      - 497f6eca-6276-4993-bfeb-53cbbbba6f08
+                    format: uuid
+                  object:
+                    type: string
+                    examples:
+                      - ingredient
+                  kitchenId:
+                    type: string
+                    examples:
+                      - altman-family
+                  name:
+                    type: string
+                    examples:
+                      - broccoli
+                  quantity:
+                    type: number
+                    examples:
+                      - 1.5
+                  unit:
+                    type: string
+                    examples:
+                      - cups
+                  useBefore:
+                    type: string
+                    examples:
+                      - '2019-08-24T14:15:22Z'
+                    format: date-time
+                  createdAt:
+                    type: string
+                    examples:
+                      - '2019-08-24T14:15:22Z'
+                    format: date-time
+                additionalProperties: false
+    get:
+      tags:
+        - ingredient
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  object:
+                    type: string
+                    examples:
+                      - list
+                  page:
+                    type: object
+                    properties:
+                      endCursor:
+                        type: string
+                        examples:
+                          - ZG9uJ3QgZGVjb2RlIG1l
+                      startCursor:
+                        type: string
+                        examples:
+                          - ZG9uJ3QgZGVjb2RlIG1l
+                      hasNextPage:
+                        type: boolean
+                        examples:
+                          - false
+                      hasPrevPage:
+                        type: boolean
+                        examples:
+                          - false
+                      limit:
+                        type: integer
+                        examples:
+                          - 10
+                      total:
+                        type: integer
+                        examples:
+                          - 0
+                    additionalProperties: false
+                  items:
+                    type: array
+                    items:
+                      type: object
+                      required:
+                        - id
+                        - object
+                        - kitchenId
+                        - name
+                        - quantity
+                        - unit
+                        - useBefore
+                        - createdAt
+                      properties:
+                        id:
+                          type: string
+                          format: uuid
+                          examples:
+                            - 497f6eca-6276-4993-bfeb-53cbbbba6f08
+                        object:
+                          type: string
+                          examples:
+                            - ingredient
+                        kitchenId:
+                          type: string
+                          examples:
+                            - altman-family
+                        name:
+                          type: string
+                          examples:
+                            - broccoli
+                        quantity:
+                          type: number
+                          examples:
+                            - 1.5
+                        unit:
+                          type: string
+                          examples:
+                            - cups
+                        useBefore:
+                          type: string
+                          format: date-time
+                          examples:
+                            - '2019-08-24T14:15:22Z'
+                        createdAt:
+                          type: string
+                          format: date-time
+                          examples:
+                            - '2019-08-24T14:15:22Z'
+                      additionalProperties: false
+                  total:
+                    type: integer
+                    examples:
+                      - 1
+                additionalProperties: false
+  /ingredients/{ingredientId}:
+    get: 
+      tags:
+        - ingredient
+      parameters:
+        - name: ingredientId      
+          in: path
+          required: true
+          schema: 
+            type: integer
+      responses:
+        '200':
+          content: 
+            application/json:
+              schema: 
+                type: object
+                properties:
+                  id:
+                    type: string
+                    examples:
+                      - 497f6eca-6276-4993-bfeb-53cbbbba6f08
+                    format: uuid
+                  object:
+                    type: string
+                    examples:
+                      - ingredient
+                  kitchenId:
+                    type: string
+                    examples:
+                      - altman-family
+                  name:
+                    type: string
+                    examples:
+                      - broccoli
+                  quantity:
+                    type: number
+                    examples:
+                      - 1.5
+                  unit:
+                    type: string
+                    examples:
+                      - cups
+                  useBefore:
+                    type: string
+                    examples:
+                      - '2019-08-24T14:15:22Z'
+                    format: date-time
+                  createdAt:
+                    type: string
+                    examples:
+                      - '2019-08-24T14:15:22Z'
+                    format: date-time
+                additionalProperties: false
