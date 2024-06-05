@@ -81,6 +81,8 @@ paths:
                 additionalProperties: false
         '400':
           $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
     get:
       tags:
         - ingredient
@@ -178,6 +180,10 @@ paths:
                     examples:
                       - 1
                 additionalProperties: false
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
   /ingredients/{ingredientId}:
     get: 
       tags:
@@ -231,6 +237,12 @@ paths:
                       - '2019-08-24T14:15:22Z'
                     format: date-time
                 additionalProperties: false
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '404':
+          $ref: '#/components/responses/NotFound'
 components:                
   responses:
     BadRequest:
