@@ -10,6 +10,8 @@ paths:
     post:
       tags:
         - ingredient
+      operationId: createIngredient
+      summary: Create ingredient
       requestBody:
         content:
           application/json:
@@ -91,6 +93,8 @@ paths:
     get:
       tags:
         - ingredient
+      operationId: getIngredients
+      summary: Get ingredients
       responses:
         '200':
           description: A list of ingredients.
@@ -196,6 +200,8 @@ paths:
     get: 
       tags:
         - ingredient
+      operationId: getIngredient
+      summary: Get ingredient
       parameters:
         - name: ingredientId      
           in: path
