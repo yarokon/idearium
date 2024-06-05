@@ -86,6 +86,8 @@ paths:
           $ref: '#/components/responses/BadRequest'
         '401':
           $ref: '#/components/responses/Unauthorized'
+      security:
+        - JWT: []
     get:
       tags:
         - ingredient
@@ -187,6 +189,8 @@ paths:
           $ref: '#/components/responses/BadRequest'
         '401':
           $ref: '#/components/responses/Unauthorized'
+      security:
+        - JWT: []
   /ingredients/{ingredientId}:
     get: 
       tags:
@@ -246,7 +250,14 @@ paths:
           $ref: '#/components/responses/Unauthorized'
         '404':
           $ref: '#/components/responses/NotFound'
-components:                
+      security:
+        - JWT: []
+components:
+  securitySchemes:
+    JWT:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT                
   responses:
     BadRequest:
       description: Bad request.
