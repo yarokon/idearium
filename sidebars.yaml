@@ -21,7 +21,7 @@
   items:
     - page: ./openapi/train-travel.yaml
 - group: Kitchen API
-  menuStyle: drilldow
+  menuStyle: drilldown
   items:
     - page: ./openapi/kitchen.yaml
 - group: Reviews
