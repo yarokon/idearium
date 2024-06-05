@@ -4,7 +4,7 @@ info:
   version: 1.0.0
 servers:
   - url: https://api.fake-kitchen-example.com
-  - url: https://api.fake-kitchen-example.eu/
+  - url: https://api.fake-kitchen-example.eu
 paths:
   /ingredients:
     post:
@@ -93,6 +93,7 @@ paths:
         - ingredient
       responses:
         '200':
+          description: A list of ingredients.
           content:
             application/json:
               schema:
@@ -203,6 +204,7 @@ paths:
             type: integer
       responses:
         '200':
+          description: Details of a specific ingredient.
           content: 
             application/json:
               schema: 
@@ -286,4 +288,4 @@ components:
           example: object
         title: 
           type: string
-          example: Error 
+          example: Error message
