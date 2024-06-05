@@ -2,6 +2,9 @@ openapi: 3.1.0
 info: 
   title: Kitchen API
   version: 1.0.0
+servers:
+  - url: https://api.fake-kitchen-example.com/
+  - url: https://api.fake-kitchen-example.eu/
 paths:
   /ingredients:
     post:
