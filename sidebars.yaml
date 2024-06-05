@@ -20,6 +20,10 @@
   menuStyle: drilldown
   items:
     - page: ./openapi/train-travel.yaml
+- group: Kitchen API
+  menuStyle: drilldown
+  items:
+    - page: ./openapi/kitchen.yaml
 - group: Reviews
   items:
     - page: ./reviews/experience-review.md
