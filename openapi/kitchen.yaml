@@ -13,6 +13,7 @@ paths:
       operationId: createIngredient
       summary: Create ingredient
       requestBody:
+        required: true
         content:
           application/json:
             schema: 
@@ -39,6 +40,9 @@ paths:
                   examples:
                     - '2019-08-24T14:15:22Z'
                   format: date-time
+              required:
+                - kitchenId
+                - name
               additionalProperties: false
       responses:
         '201':
