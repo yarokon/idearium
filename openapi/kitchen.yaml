@@ -3,8 +3,12 @@ info:
   title: Kitchen API
   version: 1.0.0
 servers:
-  - url: https://api.fake-kitchen-example.com
-  - url: https://api.fake-kitchen-example.eu
+  - url: https://{tenant}.api.kitchen.com
+    variables:
+      tenant:
+        default: region-1
+        description: Subdomain for the tenant
+  - url: https://api.kitchen-dev.com
 paths:
   /ingredients:
     post:
