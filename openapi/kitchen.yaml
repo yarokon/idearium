@@ -19,7 +19,7 @@ paths:
       requestBody:
         content:
           application/json:
-            schema: 
+            schema:
               $ref: '#/components/schemas/Ingredient'
       responses:
         '201':
@@ -45,7 +45,47 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Ingredient'
+                type: object
+                properties:
+                  object:
+                    type: string
+                    examples:
+                      - list
+                  page:
+                    type: object
+                    properties:
+                      endCursor:
+                        type: string
+                        examples:
+                          - ZG9uJ3QgZGVjb2RlIG1l
+                      startCursor:
+                        type: string
+                        examples:
+                          - ZG9uJ3QgZGVjb2RlIG1l
+                      hasNextPage:
+                        type: boolean
+                        examples:
+                          - false
+                      hasPrevPage:
+                        type: boolean
+                        examples:
+                          - false
+                      limit:
+                        type: integer
+                        examples:
+                          - 10
+                      total:
+                        type: integer
+                        examples:
+                          - 0
+                  items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Ingredient'
+                  total:
+                    type: integer
+                    examples:
+                      - 1
         '400':
           $ref: '#/components/responses/BadRequest'
         '401':
