@@ -6,10 +6,11 @@
 
 ## What can we improve
 
-* Docs
-  * The location of the docs should be changed. Instead of `author/how-to/versions`, it would be better to have `open-api/versions`.
+* [Docs](https://beta-docs.redocly.com/author/how-to/versions/)
+  * The location of the docs could have better location. Instead of `author/how-to/versions`, it would be better to have `open-api/versions`.
+  * Add an explanation waht is **versioned content** means
   * It would be good to see some screenshots showing how versions should look.
-  * I would change the headers from **Create subfolders** to **1. Create subfolders** and **Configure versions** to **2. Configure versions (optional)**.
+  * I would change the header **Configure versions** to **Configure versions (optional)**.
   * It would be good to mention that the server URL should be changed manually.
 
 Bugs:
