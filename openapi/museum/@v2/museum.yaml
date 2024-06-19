@@ -222,7 +222,7 @@ paths:
     get:
       summary: Get digital ticket
       description: >-
-        Return digital ticket compatible with Apple Wallet and Google Pay.
+        Generate a digital ticket compatible with Apple Wallet and Google Pay.
       operationId: getTicketCode
       tags:
         - Tickets
@@ -326,9 +326,7 @@ components:
       type: object
       properties:
         ticketId:
-          type: string
-          format: uuid
-          example: a54a57ca-36f8-421b-a6b4-2e8f26858a4c
+          $ref: '#/components/schemas/TicketId'
         eventName:
           type: string
           example: Museum Admission
@@ -337,6 +335,7 @@ components:
           example: 2023-09-07
         ticketTime:
           type: string
+          pattern: ^([01]\d|2[0-3]):?([0-5]\d)$
           example: 12:20
     GetMuseumHoursResponse:
       description: List of museum operating hours for consecutive days.
