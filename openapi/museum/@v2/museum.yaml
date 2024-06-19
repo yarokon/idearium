@@ -218,12 +218,11 @@ paths:
           $ref: '#/components/responses/BadRequest'
         '404':
           $ref: '#/components/responses/NotFound'
-  /tickets/{ticketId}/qr:
+  /tickets/{ticketId}/pkpass:
     get:
-      summary: Get ticket QR code
+      summary: Get digital ticket
       description: >-
-        Return an image of your ticket with scannable QR code. Used for event
-        entry.
+        Return digital ticket compatible with Apple Wallet and Google Pay.
       operationId: getTicketCode
       tags:
         - Tickets
@@ -233,9 +232,9 @@ paths:
         '200':
           description: Scannable event ticket in image format.
           content:
-            image/png:
-              schema:
-                $ref: '#/components/schemas/GetTicketCodeResponse'
+            application/json:
+              schema::
+                $ref: '#/components/schemas/GetTicketPkpassResponse'
         '400':
           $ref: '#/components/responses/BadRequest'
         '404':
@@ -322,10 +321,23 @@ components:
         - ticketType
         - ticketDate
         - confirmationCode
-    GetTicketCodeResponse:
+    GetTicketPkpassResponse:
       description: Image of a ticket with a QR code used for museum or event entry.
-      type: string
-      format: binary
+      type: object
+      properties:
+        ticketId:
+          type: string
+          format: uuid
+          example: a54a57ca-36f8-421b-a6b4-2e8f26858a4c
+        eventName:
+          type: string
+          example: Museum Admission
+        ticketDate:
+          type: string
+          example: 2023-09-07
+        ticketTime:
+          type: string
+          example: 12:20
     GetMuseumHoursResponse:
       description: List of museum operating hours for consecutive days.
       type: array
