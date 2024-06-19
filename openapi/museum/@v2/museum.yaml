@@ -233,7 +233,7 @@ paths:
           description: Scannable event ticket in image format.
           content:
             application/json:
-              schema::
+              schema:
                 $ref: '#/components/schemas/GetTicketPkpassResponse'
         '400':
           $ref: '#/components/responses/BadRequest'
