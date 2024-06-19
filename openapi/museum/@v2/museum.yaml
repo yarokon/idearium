@@ -13,7 +13,7 @@ info:
     name: MIT
     url: https://opensource.org/license/mit/
 servers:
-  - url: https://api.fake-museum-example.com/v1.1
+  - url: https://api.fake-museum-example.com/v2.0
 paths:
   /museum-hours:
     get:
