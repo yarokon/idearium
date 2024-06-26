@@ -12,4 +12,6 @@ Don't forget to also check out our <em>context documentation, API benchmarks, an
 
 Thank you for choosing our site! Start your journey into the API world right now! 🚀
 
+<br />
+
 ![giphy](images/giphy.gif)
