@@ -1,0 +1,52 @@
+theme.userMenu.login: Connexion
+theme.userMenu.logout: Déconnexion
+theme.userMenu.devOnboardingLabel: Mes applications
+theme.search.navbar.label: Rechercher
+theme.search.label: Rechercher dans tous les produits...
+theme.search.recent: Recherches récentes
+theme.search.suggested: Pages suggérées
+theme.search.noResults: Aucun résultat
+theme.search.cancel: Annuler
+theme.search.keys.navigate: pour naviguer
+theme.search.keys.select: pour sélectionner
+theme.search.keys.exit: pour quitter
+theme.toc.header: Sur cette page
+theme.versionPicker.label: "Version :"
+theme.versionPicker.unversioned: Toutes les versions
+theme.sidebar.menu.backLabel: Retour
+theme.sidebar.actions.show: Afficher la barre latérale
+theme.sidebar.actions.hide: Cacher la barre latérale
+theme.sidebar.actions.changeLayout: Cacher la barre latérale
+theme.markdown.editPage.text: Modifier la page
+theme.page.homeButton: Retour à l'accueil
+theme.page.previousButton: Page précédente
+theme.page.nextButton: Page suivante
+theme.page.lastUpdated.timeago: Dernière mise à jour
+theme.page.lastUpdated.on: Dernière mise à jour le
+theme.page.notFound.title: Quelque chose s'est égaré...
+theme.page.notFound.description: La page que vous essayez d'atteindre n'existe pas ou a peut-être été déplacée. Vous pouvez revenir à la page précédente, retourner à la page d'accueil ou utiliser la barre de recherche pour trouver ce que vous cherchez.
+theme.page.forbidden.title: Accès interdit
+theme.codeSnippet.copy.buttonText: Copier
+theme.codeSnippet.copy.tooltipText: Copier dans le presse-papiers
+theme.codeSnippet.copy.toasterText: Copié !
+theme.codeSnippet.report.buttonText: Signaler
+theme.codeSnippet.report.tooltipText: Signaler un problème
+theme.codeSnippet.report.label: Quel est le problème avec ce code ?
+theme.feedback.settings.label: Cette page vous a-t-elle été utile ?
+theme.feedback.settings.submitText: Merci d'avoir aidé à améliorer notre documentation !
+theme.feedback.settings.reasons.label: Quel énoncé décrit le mieux vos pensées sur cette page ?
+theme.feedback.settings.reasons.items.N: La valeur par défaut est celle de redocly.yaml
+theme.feedback.settings.reasons.send: Envoyer
+theme.feedback.settings.comment.submitText: Merci d'avoir aidé à améliorer notre documentation !
+theme.feedback.settings.comment.likeLabel: Qu'est-ce qui a été le plus utile ?
+theme.feedback.settings.comment.dislikeLabel: Que pouvons-nous améliorer ?
+theme.feedback.settings.comment.send: Envoyer
+theme.feedback.settings.comment.cancel: Annuler
+theme.feedback.sentiment.thumbUp: Oui
+theme.feedback.sentiment.thumbDown: Non
+theme.catalog.card.footer: Voir la documentation
+theme.catalog.filters.select.all: Tous
+theme.catalog.filters.placeholder: Filtrer...
+theme.catalog.filters.title: Filtres
+theme.catalog.filters.apply: Appliquer les filtres
+theme.footer.copyrightText: La valeur par défaut est configurée dans redocly.yaml

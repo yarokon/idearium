@@ -58,4 +58,13 @@ theme:
     type: comment
     settings: 
       label: Share your feedback with us
+
+i18n:
+  defaultLocale: en-US
+  locales:
+    - code: en-US
+      name: English
+    - code: fr-FR
+      name: French
+
         
