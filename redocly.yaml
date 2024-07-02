@@ -67,4 +67,5 @@ i18n:
     - code: fr-FR
       name: French
 
+requiresLogin: true
         
