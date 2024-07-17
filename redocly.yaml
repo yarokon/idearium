@@ -79,4 +79,5 @@ rbac:
     'openapi/admin.yaml':
       redocly.owners: maintain
       redocly.members: maintain
+      'Beta Testers': read
         
