@@ -73,6 +73,7 @@ rbac:
   content:
     '**':
       anonymous: read
+      authenticated: read
       redocly.owners: maintain
       redocly.members: maintain
     'openapi/admin.yaml':
