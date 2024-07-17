@@ -71,13 +71,10 @@ i18n:
 
 rbac:   
   content:
-    # '**':
-    #   anonymous: read
-    #   authenticated: read
-    #   redocly.owners: maintain
-    #   redocly.members: maintain
+    '**':
+      '*': read
     'openapi/admin.yaml':
-      redocly.owners: maintain
-      redocly.members: maintain
+      redocly.owners: mentain
+      redocly.members: read
       'Beta Testers': read
         
