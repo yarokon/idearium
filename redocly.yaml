@@ -72,10 +72,8 @@ i18n:
 rbac:   
   content:
     '**':
-      'anonymous': read
-      'redocly.owners': admin
-      'redocly.members': admin
-    'openapi/admin.yaml':
-      'redocly.owners': admin
-      'redocly.members': admin
+      anonymous: read
+    openapi/admin.yaml:
+      redocly.owners: admin
+      redocly.members: admin
         
