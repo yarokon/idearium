@@ -27,15 +27,16 @@
 #   menuStyle: drilldown
 #   items:
 #     - page: ./openapi/kitchen.yaml
-- group: Reviews
+- group: Debriefs
   items:
-    - page: ./reviews/experience-review.md
-    - page: ./reviews/training-3-debrief.md
-    - page: ./reviews/training-4-debrief.md
-    - page: ./reviews/training-5-debrief.md
-    - page: ./reviews/training-6-debrief.md
-    - page: ./reviews/training-7-debrief.md
-    - page: ./reviews/training-8-debrief.md
-    - page: ./reviews/training-9-debrief.md
-    - page: ./reviews/training-10-debrief.md
-    - page: ./reviews/training-11-debrief.md
+    - page: ./debriefs/experience-review.md
+    - page: ./debriefs/training-3-debrief.md
+    - page: ./debriefs/training-4-debrief.md
+    - page: ./debriefs/training-5-debrief.md
+    - page: ./debriefs/training-6-debrief.md
+    - page: ./debriefs/training-7-debrief.md
+    - page: ./debriefs/training-8-debrief.md
+    - page: ./debriefs/training-9-debrief.md
+    - page: ./debriefs/training-10-debrief.md
+    - page: ./debriefs/training-11-debrief.md
+    - page: ./debriefs/training-12-debrief.md
