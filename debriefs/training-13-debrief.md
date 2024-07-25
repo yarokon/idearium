@@ -27,6 +27,13 @@ As everyone could notice, we have almost identical tutorials that do almost the 
 
 This feature above requires time to implement, but as an easier start, we can provide two options at the beginning when you create a project: 1. create a project in Reunite or 2. use a template and connect it as a remote repo at the beginning.
 
+
+Here is a simple diagram illustrating what I mean by simplifying project creation: 
 ![project-creation-suggestion](/images/debrief-13-project-creation-suggestion.png)
+
+1. Create project like we do now + allow cloning the project locally (with push functionality) and the ability to switch the project to an external Git provider by pushing the content.
+2. Push template to external git provider. External provider will be the source of truth.
+
+## Impressions
 
 Overall, we like how detailed the tutorial is. It's super easy to follow, it's detailed in what to do, and it covers all basic functionality 💙
