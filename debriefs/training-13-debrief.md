@@ -27,4 +27,6 @@ As everyone could notice, we have almost identical tutorials that do almost the 
 
 This feature above requires time to implement, but as an easier start, we can provide two options at the beginning when you create a project: 1. create a project in Reunite or 2. use a template and connect it as a remote repo at the beginning.
 
+![project-creation-suggestion](/images/debrief-13-project-creation-suggestion.png)
+
 Overall, we like how detailed the tutorial is. It's super easy to follow, it's detailed in what to do, and it covers all basic functionality 💙
