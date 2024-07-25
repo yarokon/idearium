@@ -3,7 +3,7 @@
 ## 1. Get started with the Reunite editor
 1. It would be helpful to have some simple diagrams explaining branches and pull requests on a separate page. After that, we can provide a link from the editor page. This step should describe two ways of making changes: directly to the default branch or by creating a branch, PR, and merging it.
 2. Allow users to commit directly to the main branch without a protection modal window. Provide an option in the branch manager to disable protection for the default branch.
-3. Creating an empty `@theme` folder on your computer upon dropping it is very strange and not practical.
+3. Creating an empty `@theme` folder on your computer to use DnD is very strange and not practical.
 4. We should probably add additional explanation for this: "[Create the file using the + menu in the file tree](https://redocly.com/docs/realm/get-started/start-reunite-editor#add-more-pages)" => to create a file/folder in the root folder, all other folders should not be selected. In our case, it worked because we did not have any folders when we used this option. Also, users can use the context menu, which is much more intuitive.
   
 ## 2. Get started locally
