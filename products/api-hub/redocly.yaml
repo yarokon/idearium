@@ -1,0 +1,5 @@
+theme:
+  navbar:
+    items:
+      - page: /products/api-hub/
+

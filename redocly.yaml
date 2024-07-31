@@ -5,15 +5,24 @@ theme:
     link: /
   navbar:
     items: 
-      - page: /idearium-catalog/
+      - page: /products/api-hub/
         label: Catalog
-      - page: /idearium-catalog/scorecard/
+      - page: /products/api-hub/scorecard/
         label: Scorecard
+  products:
+    museum:
+      name: Museum
+      icon: images/museum-logo.jpg
+      folder: products/museum/
+    api-hub:
+      name: API Hub
+      icon: ./images/api-hub-logo.jpg
+      folder: ./products/api-hub
   catalog:
     idearium-catalog:
       title: Idearium APIs catalog
       description: 'This is the Idearium APIs Catalog'
-      slug: /idearium-catalog/
+      slug: /products/api-hub/
       filters:
         - title: API Category
           property: category
@@ -23,7 +32,7 @@ theme:
           missingCategoryName: No team
       groupByFirstFilter: true
       items:
-        - directory: ./openapi
+        - directory: ./products/api-hub
           flatten: true
           includeByMetadata:
             type: [openapi]
