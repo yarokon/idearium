@@ -735,20 +735,16 @@ components:
           format: int32
       xml:
         name: User
-securitySchemes:
-  api_key:
-    type: apiKey
-    name: api_key
-    in: header
-  petstore_auth:
-    type: oauth2
-    flows:
-      implicit:
-        authorizationUrl: https://petstore.swagger.io/oauth/authorize
-        scopes:
-          write:pets: modifier des animaux de compagnie dans votre compte
-          read:pets: lire vos animaux de compagnie
-externalDocs:
-  description: Trouvez plus d'informations ici
-  url: http://swagger.io
-
+  securitySchemes:
+    petstore_auth:
+      type: oauth2
+      flows:
+        implicit:
+          authorizationUrl: https://petstore.swagger.io/oauth/authorize
+          scopes:
+            write:pets: modify pets in your account
+            read:pets: read your pets
+    api_key:
+      type: apiKey
+      name: api_key
+      in: header
