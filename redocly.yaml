@@ -9,6 +9,15 @@ theme:
         label: Catalog
       - page: /idearium-catalog/scorecard/
         label: Scorecard
+  products:
+    museum:
+      name: Museum
+      icon: images/museum-logo.jpg
+      folder: products/museum/
+    api-hub:
+      name: API Hub
+      icon: ./images/api-hub-logo.jpg
+      folder: ./products/api-hub
   catalog:
     idearium-catalog:
       title: Idearium APIs catalog

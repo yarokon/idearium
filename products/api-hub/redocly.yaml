@@ -1,0 +1,5 @@
+theme:
+  navbar:
+    items:
+      - page: index.md
+        label: API Hub
