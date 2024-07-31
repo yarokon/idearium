@@ -1,0 +1,20 @@
+# Training 14 Debrief
+
+## What made you smile?
+
+Adding the product picker was easy, but configuring it correctly was impossible for us.
+
+## What did you find confusing?
+
+1. We couldn't find documentation on how to use multiple products together with versioning and the API catalog.
+2. We were not able to configure the API hub product:
+   1. It completely ignores the navbar configuration in local `redocly.yaml`. We see the navbar from the root, not API hub navbar
+   2. The search inside the API hub is not isolated.
+   3. After opening the API hub, it redirects you to the first API catalog item (Admin api).
+   4. We even invited Ivan T. and Roman H. to help us with the configuration.
+
+## Content disapiaring
+
+* We lost two uncommited images when we retuned after a lunch
+* We lost `sidebars.yaml` after commiting changes 
+ 
