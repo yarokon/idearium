@@ -12,9 +12,19 @@ Adding the product picker was easy, but configuring it correctly was impossible 
    2. The search inside the API hub is not isolated.
    3. After opening the API hub, it redirects you to the first API catalog item (Admin api).
    4. We even invited Ivan T. and Roman H. to help us with the configuration.
+   5. To fix the main navbar links to the API catalog and scorecard, the paths should start and end with `/`. For example, `/products/api-hub/` will work, but `products/api-hub` or `products/api-hub/` will result in the links being displayed but not clickable.
 
-## Content disapiaring
+   Working example (was find together with Ivan T.):
+ ```
+  navbar:
+    items: 
+      - page: /products/api-hub/
+        label: Catalog
+      - page: /products/api-hub/scorecard/
+        label: Scorecard
+```
 
-* We lost two uncommited images when we retuned after a lunch
-* We lost `sidebars.yaml` after commiting changes 
+## Content disappearing
+
+* We lost two uncommitted images when we returned after lunch.
  
