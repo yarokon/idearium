@@ -17,7 +17,7 @@ theme:
     api-hub:
       name: API Hub
       icon: ./images/api-hub-logo.jpg
-      folder: ./products/api-hub
+      folder: products/api-hub
   catalog:
     idearium-catalog:
       title: Idearium APIs catalog
