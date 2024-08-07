@@ -23,8 +23,8 @@ It would be good for users to explain the difference between **Add Git repositor
 ## Content protection 🚨
 * You can override files or add files without permission to any path in Reunite. It only works if the repo is connected via an external Git provider. In this case, it will not create a PR but pushes changes directly to the main branch.
 * We should have a separate environment for each project to prevent pushing changes to another project or somehow confirm which directories are allowed for pushing.
-👍 It's good that we do not allow pushing to the root / directory.
-👍 Content pushed to some folders will not be overwritten (unless file names match, in which case it will).
+* 👍 It's good that we do not allow pushing to the root / directory.
+* 👍 Content pushed to some folders will not be overwritten (unless file names match, in which case it will).
   
 ## What did you find confusing?
 
