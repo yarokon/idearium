@@ -19,7 +19,7 @@ jobs:
         with:
           organization: 'idearium'
           project: 'idearium'
-          mountPath: '/products/api-hub'
+          mountPath: '/products/api-hub/learning-api'
           files: 'guide.md learning-open-api.yaml'
           domain: 'https://app.cloud.redocly.com'
         env:
