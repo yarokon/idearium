@@ -1,8 +1,9 @@
 theme:
   logo: 
     srcSet: "./images/idearium-white.svg dark, ./images/idearium-black.svg light"
-    altText: logo
+    altText: Idearium
     link: /
+    favicon: images/favicon.ico
   navbar:
     items: 
       - page: /products/api-hub/
