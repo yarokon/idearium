@@ -15,14 +15,14 @@ It would be good for users to explain the difference between **Add Git repositor
 * **Add Git repository** => Connect the entire repository or a subfolder from a repository where you have access.
 * **Add from CI/CD** => Connect partial remote content from a repository where you may not have access, by asking the owner of the repository to specify to which content access should be granted.
 
-### 2. Improve guide on the left side
+### 2. Improve guide on the right side
 * We added `REDOCLY_AUTHORIZATION` to variables (as described in the info), but it is supposed to be added to the secrets section. Please also consider providing a path: [Creating configuration variables for a repository](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/variables#creating-configuration-variables-for-a-repository).
-* Change Item #5: Commit and push => Commit and push to the remote repo.
+* Change Item #5: Commit and push => Commit and push `.github/workflows/push.yaml`.
 * Add a final step as a clickable button: Done, you can close this modal window.
 
 ## Content protection 🚨
 * You can override files or add files without permission to any path in Reunite. It only works if the repo is connected via an external Git provider. In this case, it will not create a PR but pushes changes directly to the main branch.
-* We should have a separate environment for each project to prevent pushing changes to another project or somehow confirm which directories are allowed for pushing.
+* We should have a separate env variables for each project to prevent pushing changes to another project or somehow confirm which directories are allowed for pushing.
 * 👍 It's good that we do not allow pushing to the root / directory.
 * 👍 Content pushed to some folders will not be overwritten (unless file names match, in which case it will).
   
