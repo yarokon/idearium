@@ -48,8 +48,8 @@ theme:
       - name: Baseline
         extends:
           - minimal
-        # rules:
-        #   {etc}
+        rules:
+          spec: off
       - name: Silver
         extends:
           - recommended
