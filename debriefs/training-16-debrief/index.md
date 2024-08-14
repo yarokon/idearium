@@ -11,3 +11,4 @@
 - Broser cannot open deployed [GitHub Rest API](https://idearium.apishowdown.com/vendors/github/rest-api/api.github.com)
 - GitHub webhooks looked weird ![webhooks.png](./webhooks.png)
 - Webview crashed with "heap limit Allocation failed - JavaScript heap out of memory"
+- Is it possible to ignore broken links from specific folder? We have 30 broken links, and we cannot fix them because GitHub API is connected as a remote link.
