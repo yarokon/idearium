@@ -10,6 +10,10 @@ theme:
         label: Catalog
       - page: /products/api-hub/scorecard/
         label: Scorecard
+      - group: Vendors 
+        items:
+          - page: /vendors/github/schema.docs.graphql
+          - page: /vendors/github/rest-api/api.github.com.yaml
   products:
     museum:
       name: Museum
