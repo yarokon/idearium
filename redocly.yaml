@@ -13,7 +13,9 @@ theme:
       - group: Vendors 
         items:
           - page: /vendors/github/schema.docs.graphql
+            label: GitHub GraphQL API
           - page: /vendors/github/rest-api/api.github.com.yaml
+            label: GitHub V3 REST API
   products:
     museum:
       name: Museum
