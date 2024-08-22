@@ -13,10 +13,7 @@ Nous avons décidé de conserver le catalogue qui est le meilleur pour afficher 
 - la barre latérale et la barre de navigation ne sont pas chargées d'informations inutiles au niveau racine.
 
 ### APIs sous forme de cartes de catalogue
-![catalogue](images/catalog.png)
-
-### APIs comme éléments de barre latérale
-![barre latérale](images/sidebar.png)
+![catalogue](//images/sidebar.png)
 
 ### APIs comme éléments de barre de navigation
-![barre de navigation](images/navbar.png)
+![barre de navigation](/images/navbar.png)

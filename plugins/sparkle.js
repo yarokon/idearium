@@ -18,4 +18,4 @@ module.exports = {
       "operation-sparkle": OperationSparkle,
     },
   },
-}
+};
