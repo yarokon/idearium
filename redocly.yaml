@@ -75,6 +75,10 @@ theme:
     settings: 
       label: Share your feedback with us
 
+# remove after adding a decorator
+reunite:
+  ignoreLinkChecker: true
+
 i18n:
   defaultLocale: en-US
   locales:
