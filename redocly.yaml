@@ -1,11 +1,11 @@
 reunite:
   ignoreLinkChecker: true
 
-# plugins:
-#   - plugins/sparkle.js
+plugins:
+  - plugins/sparkle.js
 
-# decorators:
-#   sparkle/operation-sparkle: on
+decorators:
+  sparkle/operation-sparkle: on
 
 theme:
   logo: 
@@ -84,13 +84,13 @@ theme:
     settings: 
       label: Share your feedback with us
 
-l10n:
-  defaultLocale: en-US
-  locales:
-    - code: en-US
-      name: English
-    - code: fr-FR
-      name: French
+# l10n:
+#   defaultLocale: en-US
+#   locales:
+#     - code: en-US
+#       name: English
+#     - code: fr-FR
+#       name: French
 
 # requiresLogin: true
 

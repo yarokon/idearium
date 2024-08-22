@@ -1,7 +1,7 @@
 module.exports = OperationSparkle;
 
 function OperationSparkle() {
-  console.log("adding sparkles ... ");
+  console.log("Adding sparkles ... ");
   
   return {
     Operation: {
