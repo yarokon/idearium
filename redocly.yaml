@@ -79,11 +79,11 @@ theme:
 reunite:
   ignoreLinkChecker: true
 
-plugins:
-  - plugins/sparkle.js
+# plugins:
+#   - plugins/sparkle.js
 
-decorators:
-  sparkle/operation-sparkle: on
+# decorators:
+#   sparkle/operation-sparkle: on
 
 i18n:
   defaultLocale: en-US
