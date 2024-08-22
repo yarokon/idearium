@@ -1,3 +1,12 @@
+reunite:
+  ignoreLinkChecker: true
+
+# plugins:
+#   - plugins/sparkle.js
+
+# decorators:
+#   sparkle/operation-sparkle: on
+
 theme:
   logo: 
     srcSet: "./images/idearium-white.svg dark, ./images/idearium-black.svg light"
@@ -75,17 +84,7 @@ theme:
     settings: 
       label: Share your feedback with us
 
-# remove after adding a decorator
-reunite:
-  ignoreLinkChecker: true
-
-# plugins:
-#   - plugins/sparkle.js
-
-# decorators:
-#   sparkle/operation-sparkle: on
-
-i18n:
+l10n:
   defaultLocale: en-US
   locales:
     - code: en-US
