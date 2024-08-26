@@ -1,5 +1,4 @@
-theme:
-  navbar:
-    items:
-      - page: index.md
-        label: Museum Home
+navbar:
+  items:
+    - page: index.md
+      label: Museum Home

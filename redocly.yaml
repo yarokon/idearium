@@ -3,27 +3,37 @@ reunite:
 
 plugins:
   - plugins/sparkle.js
+  - plugins/github.js
 
-decorators:
-  sparkle/operation-sparkle: on
+apis:
+  petstore:
+    root: test-api/petstore.yaml
+    decorators:
+      sparkle/operation-sparkle: on
+  github-rest:
+    root: vendors/github/rest-api/api.github.com.yaml
+    decorators:
+      git-hub/external-links-fix: on
 
-logo: 
+logo:
   srcSet: "./images/idearium-white.svg dark, ./images/idearium-black.svg light"
   altText: Idearium
   link: /
   favicon: images/favicon.ico
 navbar:
-  items: 
+  items:
     - page: /products/api-hub/
       label: Catalog
     - page: /products/api-hub/scorecard/
       label: Scorecard
-    - group: Vendors 
+    - group: Vendors
       items:
         - page: /vendors/github/schema.docs.graphql
           label: GitHub GraphQL API
         - page: /vendors/github/rest-api/api.github.com.yaml
           label: GitHub V3 REST API
+    - page: /test-api/petstore.yaml
+      label: Test Petstore
 products:
   museum:
     name: Museum
@@ -36,7 +46,7 @@ products:
 catalog:
   idearium-catalog:
     title: Idearium APIs catalog
-    description: 'This is the Idearium APIs Catalog'
+    description: "This is the Idearium APIs Catalog"
     slug: /products/api-hub/
     filters:
       - title: API Category
@@ -52,7 +62,7 @@ catalog:
         includeByMetadata:
           type: [openapi]
 scorecard:
-  levels: 
+  levels:
     - name: Baseline
       extends:
         - minimal
@@ -70,7 +80,7 @@ scorecard:
         info-description: off
   targets:
     - where:
-        metadata: 
+        metadata:
           l0: Distribution
           publishDateRange: 2021-01-01T00:00:00Z/2022-01-01
       minimumLevel: Silver
@@ -80,7 +90,7 @@ scorecard:
     default: No Crew
 feedback:
   type: comment
-  settings: 
+  settings:
     label: Share your feedback with us
 
 # l10n:
@@ -93,12 +103,11 @@ feedback:
 
 # requiresLogin: true
 
-rbac:   
+rbac:
   content:
-    '**':
-      '*': read
-    'openapi/admin.yaml':
+    "**":
+      "*": read
+    "openapi/admin.yaml":
       redocly.owners: maintain
       redocly.members: read
-      'Beta Testers': read
-        
+      "Beta Testers": read
