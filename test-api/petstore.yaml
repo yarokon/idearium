@@ -46,16 +46,16 @@ paths:
       description: Add a new pet to the store
       operationId: addPet
       responses:
-        "200":
+        '200':
           description: Successful operation
           content:
             application/xml:
               schema:
-                $ref: "#/components/schemas/Pet"
+                $ref: '#/components/schemas/Pet'
             application/json:
               schema:
-                $ref: "#/components/schemas/Pet"
-        "405":
+                $ref: '#/components/schemas/Pet'
+        '405':
           description: Invalid input
       security:
         - petstore_auth:
@@ -67,13 +67,13 @@ paths:
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/Pet"
+              $ref: '#/components/schemas/Pet'
           application/xml:
             schema:
-              $ref: "#/components/schemas/Pet"
+              $ref: '#/components/schemas/Pet'
           application/x-www-form-urlencoded:
             schema:
-              $ref: "#/components/schemas/Pet"
+              $ref: '#/components/schemas/Pet'
     put:
       tags:
         - pet
@@ -81,20 +81,20 @@ paths:
       description: Update an existing pet by Id
       operationId: updatePet
       responses:
-        "200":
+        '200':
           description: Successful operation
           content:
             application/xml:
               schema:
-                $ref: "#/components/schemas/Pet"
+                $ref: '#/components/schemas/Pet'
             application/json:
               schema:
-                $ref: "#/components/schemas/Pet"
-        "400":
+                $ref: '#/components/schemas/Pet'
+        '400':
           description: Invalid ID supplied
-        "404":
+        '404':
           description: Pet not found
-        "405":
+        '405':
           description: Validation exception
       security:
         - petstore_auth:
@@ -106,13 +106,13 @@ paths:
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/Pet"
+              $ref: '#/components/schemas/Pet'
           application/xml:
             schema:
-              $ref: "#/components/schemas/Pet"
+              $ref: '#/components/schemas/Pet'
           application/x-www-form-urlencoded:
             schema:
-              $ref: "#/components/schemas/Pet"
+              $ref: '#/components/schemas/Pet'
   /pet/findByStatus:
     get:
       tags:
@@ -134,20 +134,20 @@ paths:
               - sold
             default: available
       responses:
-        "200":
+        '200':
           description: successful operation
           content:
             application/xml:
               schema:
                 type: array
                 items:
-                  $ref: "#/components/schemas/Pet"
+                  $ref: '#/components/schemas/Pet'
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: "#/components/schemas/Pet"
-        "400":
+                  $ref: '#/components/schemas/Pet'
+        '400':
           description: Invalid status value
       security:
         - petstore_auth:
@@ -173,20 +173,20 @@ paths:
             items:
               type: string
       responses:
-        "200":
+        '200':
           description: successful operation
           content:
             application/xml:
               schema:
                 type: array
                 items:
-                  $ref: "#/components/schemas/Pet"
+                  $ref: '#/components/schemas/Pet'
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: "#/components/schemas/Pet"
-        "400":
+                  $ref: '#/components/schemas/Pet'
+        '400':
           description: Invalid tag value
       security:
         - petstore_auth:
@@ -208,18 +208,18 @@ paths:
               type: integer
               format: int64
         responses:
-          "200":
+          '200':
             description: successful operation
             content:
               application/xml:
                 schema:
-                  $ref: "#/components/schemas/Pet"
+                  $ref: '#/components/schemas/Pet'
               application/json:
                 schema:
-                  $ref: "#/components/schemas/Pet"
-          "400":
+                  $ref: '#/components/schemas/Pet'
+          '400':
             description: Invalid ID supplied
-          "404":
+          '404':
             description: Pet not found
         security:
           - api_key: []
@@ -230,7 +230,7 @@ paths:
       tags:
         - pet
       summary: Updates a pet in the store with form data
-      description: ""
+      description: ''
       operationId: updatePetWithForm
       parameters:
         - name: petId
@@ -251,7 +251,7 @@ paths:
           schema:
             type: string
       responses:
-        "405":
+        '405':
           description: Invalid input
       security:
         - petstore_auth:
@@ -261,12 +261,12 @@ paths:
       tags:
         - pet
       summary: Deletes a pet
-      description: ""
+      description: ''
       operationId: deletePet
       parameters:
         - name: api_key
           in: header
-          description: ""
+          description: ''
           required: false
           schema:
             type: string
@@ -278,7 +278,7 @@ paths:
             type: integer
             format: int64
       responses:
-        "400":
+        '400':
           description: Invalid pet value
       security:
         - petstore_auth:
@@ -328,7 +328,7 @@ components:
           type: string
           example: doggie
         category:
-          $ref: "#/components/schemas/Category"
+          $ref: '#/components/schemas/Category'
         photoUrls:
           type: array
           xml:
@@ -342,7 +342,7 @@ components:
           xml:
             wrapped: true
           items:
-            $ref: "#/components/schemas/Tag"
+            $ref: '#/components/schemas/Tag'
             xml:
               name: tag
         status:
@@ -365,17 +365,17 @@ components:
         message:
           type: string
       xml:
-        name: "##default"
+        name: '##default'
       type: object
   requestBodies:
     Pet:
       content:
         application/json:
           schema:
-            $ref: "#/components/schemas/Pet"
+            $ref: '#/components/schemas/Pet'
         application/xml:
           schema:
-            $ref: "#/components/schemas/Pet"
+            $ref: '#/components/schemas/Pet'
       description: Pet object that needs to be added to the store
   securitySchemes:
     petstore_auth:

@@ -1,3 +1,3 @@
 {% admonition type="danger" %}
-  Training exercise.
+Training exercise.
 {% /admonition %}

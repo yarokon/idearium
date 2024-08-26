@@ -1,5 +1,5 @@
 openapi: 3.1.0
-info: 
+info:
   title: Kitchen API
   version: 1.0.0
   description: Kitchen API
@@ -25,9 +25,9 @@ paths:
       responses:
         '201':
           description: Success
-          content: 
+          content:
             application/json:
-              schema: 
+              schema:
                 $ref: '#/components/schemas/Ingredient'
         '400':
           $ref: '#/components/responses/BadRequest'
@@ -94,23 +94,23 @@ paths:
       security:
         - JWT: []
   /ingredients/{ingredientId}:
-    get: 
+    get:
       tags:
         - ingredient
       operationId: getIngredient
       summary: Get ingredient
       parameters:
-        - name: ingredientId      
+        - name: ingredientId
           in: path
           required: true
-          schema: 
+          schema:
             type: integer
       responses:
         '200':
           description: Details of a specific ingredient.
-          content: 
+          content:
             application/json:
-              schema: 
+              schema:
                 $ref: '#/components/schemas/Ingredient'
         '400':
           $ref: '#/components/responses/BadRequest'
@@ -125,7 +125,7 @@ components:
     JWT:
       type: http
       scheme: bearer
-      bearerFormat: JWT                
+      bearerFormat: JWT
   responses:
     BadRequest:
       description: Bad request.
@@ -145,7 +145,7 @@ components:
         application/problem+json:
           schema:
             $ref: '#/components/schemas/Error'
-  schemas: 
+  schemas:
     Ingredient:
       type: object
       properties:
@@ -193,10 +193,10 @@ components:
         - name
     Error:
       type: object
-      properties: 
-        type: 
+      properties:
+        type:
           type: string
           example: object
-        title: 
+        title:
           type: string
           example: Error message

@@ -11,7 +11,7 @@ theme.search.keys.navigate: pour naviguer
 theme.search.keys.select: pour sélectionner
 theme.search.keys.exit: pour quitter
 theme.toc.header: Sur cette page
-theme.versionPicker.label: "Version :"
+theme.versionPicker.label: 'Version :'
 theme.versionPicker.unversioned: Toutes les versions
 theme.sidebar.menu.backLabel: Retour
 theme.sidebar.actions.show: Afficher la barre latérale

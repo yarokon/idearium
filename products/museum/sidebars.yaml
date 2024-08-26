@@ -1,5 +1,5 @@
 - page: index.md
   label: Home
-- page: "./@v2/museum.yaml"
+- page: './@v2/museum.yaml'
   label: Museum
 # - page: museum.yaml

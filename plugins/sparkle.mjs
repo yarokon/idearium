@@ -1,11 +1,11 @@
-import { OperationSparkle } from "./decorators/operation-sparkle.mjs";
+import { OperationSparkle } from './decorators/operation-sparkle.mjs';
 
 export default function sparklePlugin() {
   return {
-    id: "sparkle",
+    id: 'sparkle',
     decorators: {
       oas3: {
-        "operation-sparkle": OperationSparkle,
+        'operation-sparkle': OperationSparkle,
       },
     },
   };

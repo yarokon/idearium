@@ -1,11 +1,11 @@
-import { ExternalLinksFix } from "./decorators/external-links-fix.mjs";
+import { ExternalLinksFix } from './decorators/external-links-fix.mjs';
 
 export default function sparklePlugin() {
   return {
-    id: "git-hub",
+    id: 'git-hub',
     decorators: {
       oas3: {
-        "external-links-fix": ExternalLinksFix,
+        'external-links-fix': ExternalLinksFix,
       },
     },
   };

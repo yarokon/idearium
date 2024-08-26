@@ -1,3 +1,3 @@
 {% admonition type="danger" %}
-  Exercice d'entraînement.
+Exercice d'entraînement.
 {% /admonition %}

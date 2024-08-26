@@ -2,9 +2,9 @@
 
 # Welcome to Idearium
 
-We are pleased to welcome you to our <strong>"API Showdown"</strong> website! Here you will find information about three of the most popular and interesting public APIs: 
+We are pleased to welcome you to our <strong>"API Showdown"</strong> website! Here you will find information about three of the most popular and interesting public APIs:
 
-  > Petstore, Museum and Train Travel.
+> Petstore, Museum and Train Travel.
 
 Find out about the functionality of each API, compare their features, and learn how they can enrich your projects and applications. Our goal is to provide you with all the information you need to successfully integrate and use these APIs in your projects.
 

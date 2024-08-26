@@ -45,7 +45,7 @@ tags:
       > Bookings usually expire within 1 hour so you'll need to make your
       payment
 
-      > before the expiry date 
+      > before the expiry date
 paths:
   /stations:
     get:
@@ -988,7 +988,7 @@ components:
         If the value is an integer, it indicates the number of seconds to wait. 
 
         If the value is a date, it indicates the time at which the user agent
-        should make a follow-up request. 
+        should make a follow-up request.
       schema:
         type: string
       examples:

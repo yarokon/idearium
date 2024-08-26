@@ -204,7 +204,7 @@ paths:
           $ref: '#/components/responses/NotFound'
   /tickets/{ticketId}/:
     put:
-      summary: Refund of museum tickets 
+      summary: Refund of museum tickets
       description: Allow to refund museum tickets.
       operationId: refundMuseumTickets
       tags:
@@ -213,7 +213,7 @@ paths:
         - $ref: '#/components/parameters/TicketId'
       responses:
         '200':
-          description: Success.    
+          description: Success.
         '400':
           $ref: '#/components/responses/BadRequest'
         '404':

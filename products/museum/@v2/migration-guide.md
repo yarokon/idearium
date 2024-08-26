@@ -17,10 +17,10 @@ This guide provides a brief walkthrough for developers to transition from the QR
 - **New Endpoint**: Integrate `GET /tickets/{ticketId}/pkpass` to generate digital tickets.
 
 #### Example Request
+
 ```http
 GET /v2/tickets/{ticketId}/pkpass
 ```
-
 
 ### Step 4: Process Digital Tickets
 

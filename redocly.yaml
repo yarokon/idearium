@@ -16,7 +16,7 @@ apis:
       git-hub/external-links-fix: on
 
 logo:
-  srcSet: "./images/idearium-white.svg dark, ./images/idearium-black.svg light"
+  srcSet: './images/idearium-white.svg dark, ./images/idearium-black.svg light'
   altText: Idearium
   link: /
   favicon: images/favicon.ico
@@ -46,7 +46,7 @@ products:
 catalog:
   idearium-catalog:
     title: Idearium APIs catalog
-    description: "This is the Idearium APIs Catalog"
+    description: 'This is the Idearium APIs Catalog'
     slug: /products/api-hub/
     filters:
       - title: API Category
@@ -105,9 +105,9 @@ feedback:
 
 rbac:
   content:
-    "**":
-      "*": read
-    "openapi/admin.yaml":
+    '**':
+      '*': read
+    'openapi/admin.yaml':
       redocly.owners: maintain
       redocly.members: read
-      "Beta Testers": read
+      'Beta Testers': read

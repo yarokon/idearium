@@ -4,7 +4,7 @@
 
 Nous sommes ravis de vous accueillir sur notre site web <strong>"API Showdown"</strong> ! Ici, vous trouverez des informations sur trois des API publiques les plus populaires et intéressantes :
 
-  > Petstore, Museum et Train Travel.
+> Petstore, Museum et Train Travel.
 
 Découvrez les fonctionnalités de chaque API, comparez leurs caractéristiques et apprenez comment elles peuvent enrichir vos projets et applications. Notre objectif est de vous fournir toutes les informations nécessaires pour intégrer et utiliser avec succès ces API dans vos projets.
 

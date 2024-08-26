@@ -5,7 +5,9 @@
 ### Conclusion
 
 Nous avons décidé de conserver le catalogue qui est le meilleur pour afficher nos APIs.
+
 ##### Avantages :
+
 - toutes les APIs au même endroit sous forme de cartes compactes avec description ;
 - nous avons des filtres personnalisables pour vous aider à trouver ce dont vous avez besoin plus rapidement ;
 - facile à étendre et à ajouter de nouvelles APIs sans craindre de créer du désordre ;
@@ -13,7 +15,9 @@ Nous avons décidé de conserver le catalogue qui est le meilleur pour afficher 
 - la barre latérale et la barre de navigation ne sont pas chargées d'informations inutiles au niveau racine.
 
 ### APIs sous forme de cartes de catalogue
+
 ![catalogue](//images/sidebar.png)
 
 ### APIs comme éléments de barre de navigation
+
 ![barre de navigation](/images/navbar.png)

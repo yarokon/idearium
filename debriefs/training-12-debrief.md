@@ -21,9 +21,9 @@
 
 ### Why We Chose the PRO (Redoc + Revel) Plan:
 
-* As a small company, we do not need SSO, and 100 pages will be enough for us. One question remains: Do we count API endpoints or tags as separate pages?
-* We chose Redoc + Revel because we need basic functionality from Redoc and the ability to create docs, change styles, and have a landing page.
-* Our total budget is **$54/month**.
+- As a small company, we do not need SSO, and 100 pages will be enough for us. One question remains: Do we count API endpoints or tags as separate pages?
+- We chose Redoc + Revel because we need basic functionality from Redoc and the ability to create docs, change styles, and have a landing page.
+- Our total budget is **$54/month**.
 
 ## Can We Go to Public Release Now?
 
@@ -31,10 +31,10 @@ Our **Top 9 issues** from customers do not contain critical issues, but it would
 
 ## What Made You Smile?
 
-* What seemed simple to us seemed confusing to users (from watching interviews).
-* We like how users name certain features (like Live preview).
+- What seemed simple to us seemed confusing to users (from watching interviews).
+- We like how users name certain features (like Live preview).
 
 ## What Did You Find Confusing?
 
-* When calculating the cost for a project on the `pricing` page, it was difficult to understand what items were included in the plan or product. It would be helpful to always see three products: Redoc, Reef, and Revel, wrapped by Realm.
-* Each product page should have a list of features with explanations and examples/images. Currently, not all features are described, and the pages contain a lot of unnecessary information.
+- When calculating the cost for a project on the `pricing` page, it was difficult to understand what items were included in the plan or product. It would be helpful to always see three products: Redoc, Reef, and Revel, wrapped by Realm.
+- Each product page should have a list of features with explanations and examples/images. Currently, not all features are described, and the pages contain a lot of unnecessary information.

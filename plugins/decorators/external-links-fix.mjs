@@ -7,12 +7,12 @@ function fixBrokenLinksInDescription(target) {
 
   target.description = description.replace(
     /\[([^\]]+)\]\(\/([^\)]+)\)/g,
-    (_, text, link) => `[${text}](https://docs.github.com/${link})`
+    (_, text, link) => `[${text}](https://docs.github.com/${link})`,
   );
 }
 
 export function ExternalLinksFix() {
-  console.log("Fixing links ... ");
+  console.log('Fixing links ... ');
 
   return {
     Operation: {
