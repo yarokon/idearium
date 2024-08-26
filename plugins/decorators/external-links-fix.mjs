@@ -1,5 +1,3 @@
-module.exports = ExternalLinksFix;
-
 function fixBrokenLinksInDescription(target) {
   const description = target.description;
 
@@ -13,7 +11,7 @@ function fixBrokenLinksInDescription(target) {
   );
 }
 
-function ExternalLinksFix() {
+export function ExternalLinksFix() {
   console.log("Fixing links ... ");
 
   return {

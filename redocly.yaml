@@ -2,8 +2,8 @@ reunite:
   ignoreLinkChecker: true
 
 plugins:
-  - plugins/sparkle.js
-  - plugins/github.js
+  - plugins/sparkle.mjs
+  - plugins/github.mjs
 
 apis:
   petstore:

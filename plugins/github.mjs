@@ -1,6 +1,6 @@
-const ExternalLinksFix = require("./decorators/external-links-fix.js");
+import { ExternalLinksFix } from "./decorators/external-links-fix.mjs";
 
-module.exports = function sparklePlugin() {
+export default function sparklePlugin() {
   return {
     id: "git-hub",
     decorators: {
@@ -9,4 +9,4 @@ module.exports = function sparklePlugin() {
       },
     },
   };
-};
+}
