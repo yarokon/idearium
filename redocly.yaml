@@ -7,82 +7,81 @@ plugins:
 decorators:
   sparkle/operation-sparkle: on
 
-theme:
-  logo: 
-    srcSet: "./images/idearium-white.svg dark, ./images/idearium-black.svg light"
-    altText: Idearium
-    link: /
-    favicon: images/favicon.ico
-  navbar:
-    items: 
-      - page: /products/api-hub/
-        label: Catalog
-      - page: /products/api-hub/scorecard/
-        label: Scorecard
-      - group: Vendors 
-        items:
-          - page: /vendors/github/schema.docs.graphql
-            label: GitHub GraphQL API
-          - page: /vendors/github/rest-api/api.github.com.yaml
-            label: GitHub V3 REST API
-  products:
-    museum:
-      name: Museum
-      icon: images/museum-logo.jpg
-      folder: products/museum/
-    api-hub:
-      name: API Hub
-      icon: ./images/api-hub-logo.jpg
-      folder: products/api-hub
-  catalog:
-    idearium-catalog:
-      title: Idearium APIs catalog
-      description: 'This is the Idearium APIs Catalog'
-      slug: /products/api-hub/
-      filters:
-        - title: API Category
-          property: category
-          missingCategoryName: Other
-        - title: Team
-          property: team
-          missingCategoryName: No team
-      groupByFirstFilter: true
+logo: 
+  srcSet: "./images/idearium-white.svg dark, ./images/idearium-black.svg light"
+  altText: Idearium
+  link: /
+  favicon: images/favicon.ico
+navbar:
+  items: 
+    - page: /products/api-hub/
+      label: Catalog
+    - page: /products/api-hub/scorecard/
+      label: Scorecard
+    - group: Vendors 
       items:
-        - directory: ./products/api-hub
-          flatten: true
-          includeByMetadata:
-            type: [openapi]
-  scorecard:
-    levels: 
-      - name: Baseline
-        extends:
-          - minimal
-        rules:
-          spec: off
-      - name: Silver
-        extends:
-          - recommended
-          # rules:
-          #   {etc}
-      - name: Gold
-        extends:
-          - recommended
-        rules:
-          info-description: off
-    targets:
-      - where:
-          metadata: 
-            l0: Distribution
-            publishDateRange: 2021-01-01T00:00:00Z/2022-01-01
-        minimumLevel: Silver
-    teamMetadataProperty:
-      property: crew-name
-      label: Crew
-      default: No Crew
-  feedback:
-    type: comment
-    settings: 
-      label: Share your feedback with us
+        - page: /vendors/github/schema.docs.graphql
+          label: GitHub GraphQL API
+        - page: /vendors/github/rest-api/api.github.com.yaml
+          label: GitHub V3 REST API
+products:
+  museum:
+    name: Museum
+    icon: images/museum-logo.jpg
+    folder: products/museum/
+  api-hub:
+    name: API Hub
+    icon: ./images/api-hub-logo.jpg
+    folder: products/api-hub
+catalog:
+  idearium-catalog:
+    title: Idearium APIs catalog
+    description: 'This is the Idearium APIs Catalog'
+    slug: /products/api-hub/
+    filters:
+      - title: API Category
+        property: category
+        missingCategoryName: Other
+      - title: Team
+        property: team
+        missingCategoryName: No team
+    groupByFirstFilter: true
+    items:
+      - directory: ./products/api-hub
+        flatten: true
+        includeByMetadata:
+          type: [openapi]
+scorecard:
+  levels: 
+    - name: Baseline
+      extends:
+        - minimal
+      rules:
+        spec: off
+    - name: Silver
+      extends:
+        - recommended
+        # rules:
+        #   {etc}
+    - name: Gold
+      extends:
+        - recommended
+      rules:
+        info-description: off
+  targets:
+    - where:
+        metadata: 
+          l0: Distribution
+          publishDateRange: 2021-01-01T00:00:00Z/2022-01-01
+      minimumLevel: Silver
+  teamMetadataProperty:
+    property: crew-name
+    label: Crew
+    default: No Crew
+feedback:
+  type: comment
+  settings: 
+    label: Share your feedback with us
 
 # l10n:
 #   defaultLocale: en-US
