@@ -1,19 +1,18 @@
-reunite:
-  ignoreLinkChecker: true
-
 plugins:
   - plugins/sparkle.mjs
   - plugins/github.mjs
 
 apis:
   petstore:
-    root: test-api/petstore.yaml
+    root: products/api-hub/petstore.yaml
     decorators:
       sparkle/operation-sparkle: on
   github-rest:
     root: vendors/github/rest-api/api.github.com.yaml
     decorators:
-      git-hub/external-links-fix: on
+      git-hub/operation-external-links-fix: on
+    preprocessors:
+      git-hub/schema-properties-external-links-fix: on
 
 logo:
   srcSet: './images/idearium-white.svg dark, ./images/idearium-black.svg light'
@@ -32,8 +31,6 @@ navbar:
           label: GitHub GraphQL API
         - page: /vendors/github/rest-api/api.github.com.yaml
           label: GitHub V3 REST API
-    - page: /test-api/petstore.yaml
-      label: Test Petstore
 products:
   museum:
     name: Museum

@@ -4,8 +4,8 @@ export function OperationSparkle() {
   return {
     Operation: {
       leave(target) {
-        if (target.summary) {
-          target.summary = '✨' + String(target.summary);
+        if (target.description) {
+          target.description = '✨' + String(target.description);
         }
       },
     },
