@@ -1,7 +1,7 @@
-import { fixBrokenLinksInDescription } from '../utils/fix-broken-links-in-description.mjs';
+import { fixBrokenLinksInDescription } from '../utils/fix-broken-links-in-description.js';
 
 export function SchemaPropertiesExternalLinksFix() {
-  console.log('Fixing schema properties links ... ');
+  console.log('🔧 Fixing schema properties links ... ');
 
   return {
     SchemaProperties: {

@@ -1,5 +1,5 @@
 export function WebhooksMapSwapDescriptionAndSummary() {
-  console.log('Swapping description and summary ... ');
+  console.log('🔁 Swapping description and summary ... ');
 
   return {
     WebhooksMap: {
@@ -8,10 +8,16 @@ export function WebhooksMapSwapDescriptionAndSummary() {
           const description = target.description ?? '';
           const summary = target.summary ?? '';
 
-          target.summary = description;
+          target.summary = removeTextAfterDot(description);
           target.description = summary;
         },
       },
     },
   };
+}
+
+function removeTextAfterDot(text) {
+  const dotIndex = text.indexOf('.');
+
+  return dotIndex !== -1 ? text.substring(0, dotIndex + 1) : text;
 }

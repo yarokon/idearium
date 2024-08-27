@@ -1,6 +1,6 @@
 plugins:
-  - plugins/sparkle.mjs
-  - plugins/github.mjs
+  - plugins/github.js
+  - plugins/sparkle.js
 
 apis:
   # Dosen't work with petstore ???

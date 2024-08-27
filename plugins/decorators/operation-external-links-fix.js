@@ -1,7 +1,7 @@
-import { fixBrokenLinksInDescription } from '../utils/fix-broken-links-in-description.mjs';
+import { fixBrokenLinksInDescription } from '../utils/fix-broken-links-in-description.js';
 
 export function OperationExternalLinksFix() {
-  console.log('Fixing operation links ... ');
+  console.log('🔧 Fixing operation links ... ');
 
   return {
     Operation: {

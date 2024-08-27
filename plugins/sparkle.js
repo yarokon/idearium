@@ -1,4 +1,4 @@
-import { OperationSparkle } from './decorators/operation-sparkle.mjs';
+import { OperationSparkle } from './decorators/operation-sparkle.js';
 
 export default function sparklePlugin() {
   return {

@@ -1,6 +1,6 @@
-import { OperationExternalLinksFix } from './decorators/operation-external-links-fix.mjs';
-import { WebhooksMapSwapDescriptionAndSummary } from './decorators/webhhoks-map-swap-description-and-summary.mjs';
-import { SchemaPropertiesExternalLinksFix } from './preprocessors/schema-properties-external-links-fix.mjs';
+import { OperationExternalLinksFix } from './decorators/operation-external-links-fix.js';
+import { WebhooksMapSwapDescriptionAndSummary } from './decorators/webhhoks-map-swap-description-and-summary.js';
+import { SchemaPropertiesExternalLinksFix } from './preprocessors/schema-properties-external-links-fix.js';
 
 export default function sparklePlugin() {
   return {
