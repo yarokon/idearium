@@ -3,11 +3,6 @@ plugins:
   - plugins/sparkle.js
 
 apis:
-  # Dosen't work with petstore ???
-  # petstore:
-  #   root: products/api-hub/petstore.yaml
-  #   decorators:
-  #     sparkle/operation-sparkle: on
   github-rest:
     root: vendors/github/rest-api/api.github.com.yaml
     decorators:
@@ -93,13 +88,13 @@ feedback:
   settings:
     label: Share your feedback with us
 
-# l10n:
-#   defaultLocale: en-US
-#   locales:
-#     - code: en-US
-#       name: English
-#     - code: fr-FR
-#       name: French
+l10n:
+  defaultLocale: en-US
+  locales:
+    - code: en-US
+      name: English
+    - code: fr-FR
+      name: French
 
 # requiresLogin: true
 
