@@ -11,6 +11,7 @@ apis:
     root: vendors/github/rest-api/api.github.com.yaml
     decorators:
       git-hub/operation-external-links-fix: on
+      git-hub/webhoks-map-swap-description-and-symmary: on
     preprocessors:
       git-hub/schema-properties-external-links-fix: on
 
@@ -27,10 +28,10 @@ navbar:
       label: Scorecard
     - group: Vendors
       items:
-        - page: /vendors/github/schema.docs.graphql
-          label: GitHub GraphQL API
         - page: /vendors/github/rest-api/api.github.com.yaml
           label: GitHub V3 REST API
+        - page: /vendors/github/schema.docs.graphql
+          label: GitHub GraphQL API
 products:
   museum:
     name: Museum
