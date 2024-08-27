@@ -5,7 +5,7 @@ export function OperationSparkle() {
     Operation: {
       leave(target) {
         if (target.description) {
-          target.description = '✨' + String(target.description);
+          target.description = '✨ ' + (target.description ?? '');
         }
       },
     },

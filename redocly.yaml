@@ -3,15 +3,17 @@ plugins:
   - plugins/github.mjs
 
 apis:
-  petstore:
-    root: products/api-hub/petstore.yaml
-    decorators:
-      sparkle/operation-sparkle: on
+  # Dosen't work with petstore ???
+  # petstore:
+  #   root: products/api-hub/petstore.yaml
+  #   decorators:
+  #     sparkle/operation-sparkle: on
   github-rest:
     root: vendors/github/rest-api/api.github.com.yaml
     decorators:
       git-hub/operation-external-links-fix: on
       git-hub/webhoks-map-swap-description-and-symmary: on
+      sparkle/operation-sparkle: on
     preprocessors:
       git-hub/schema-properties-external-links-fix: on
 
