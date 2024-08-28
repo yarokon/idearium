@@ -19,11 +19,14 @@
 - For Revel/Realm, show that plugins are applied for each language.
 - Is it possible to specify the order of plugins? For instance, I want to apply the sparkle decorator only after swapping description and summary.
 
-{% code-snippet file="/redocly.yaml" title="redocly.yaml" to=11 /%}
+<details><summary>See code snippets</summary>
 
-{% code-snippet file="/plugins/github.js" title="plugins/github.js" /%}
+  {% code-snippet file="/redocly.yaml" title="redocly.yaml" to=11 /%}
 
-{% code-snippet file="/plugins/decorators/external-links-fix.js" title="external-links-fix.js" /%}
+  {% code-snippet file="/plugins/github.js" title="plugins/github.js" /%}
 
-{% code-snippet file="/plugins/decorators/webhhoks-swap-description-and-summary.js" title="webhhoks-swap-description-and-summary.js" /%}
+  {% code-snippet file="/plugins/decorators/external-links-fix.js" title="external-links-fix.js" /%}
 
+  {% code-snippet file="/plugins/decorators/webhhoks-swap-description-and-summary.js" title="webhhoks-swap-description-and-summary.js" /%}
+  
+</details>
