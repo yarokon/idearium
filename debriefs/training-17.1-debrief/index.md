@@ -1,10 +1,8 @@
-# Training 17 Debrief
+# Training 17.1 Debrief
 
 ## What made you smile?
 
 - Completing this task for 3 hours 😅
-- When finally fixed links, but it took much more time
-![realm-logs.png](./realm-logs.png)
 ## What did you find confusing?
 
 - We were not able to complete this training.
