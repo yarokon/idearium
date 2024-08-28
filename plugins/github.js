@@ -1,19 +1,13 @@
-import { OperationExternalLinksFix } from './decorators/operation-external-links-fix.js';
-import { WebhooksMapSwapDescriptionAndSummary } from './decorators/webhhoks-map-swap-description-and-summary.js';
-import { SchemaPropertiesExternalLinksFix } from './preprocessors/schema-properties-external-links-fix.js';
+import { ExternalLinksFix } from './decorators/external-links-fix.js';
+import { WebhooksSwapDescriptionAndSummary } from './decorators/webhhoks-swap-description-and-summary.js';
 
-export default function sparklePlugin() {
+export default function githubPlugin() {
   return {
-    id: 'git-hub',
+    id: 'github',
     decorators: {
       oas3: {
-        'operation-external-links-fix': OperationExternalLinksFix,
-        'webhoks-map-swap-description-and-symmary': WebhooksMapSwapDescriptionAndSummary,
-      },
-    },
-    preprocessors: {
-      oas3: {
-        'schema-properties-external-links-fix': SchemaPropertiesExternalLinksFix,
+        'external-links-fix': ExternalLinksFix,
+        'webhoks-swap-description-and-symmary': WebhooksSwapDescriptionAndSummary,
       },
     },
   };
