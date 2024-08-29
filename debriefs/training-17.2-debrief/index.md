@@ -19,6 +19,8 @@
 - ⚠️ Warning in terminal: `React does not recognize the 'separatorLine' prop on a DOM element`.
 - For Revel/Realm, probably we should show that plugins are applied for each language.
 - Is it possible to specify the order of plugins? For instance, I want to apply the sparkle decorator only after swapping description and summary.
+- How do I debug decorators with Reunite? Should I make a commit and check the preview build logs? Hopefully, I have the ability to run the project locally.
+- Maybe it would be good to add an `rs` (restart) option for Realm, similar to what `nodemon` has. For instance, when I change a decorator, I have to quit (`q`) and run `pnpm start` to see logs.
 
 <details><summary>See code snippets</summary>
 
