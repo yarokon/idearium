@@ -7,11 +7,9 @@ export function ExternalLinksFix() {
         fixBrokenLinksInDescription(operation);
       },
     },
-    SchemaProperties: {
-      enter(schemaProperties) {
-        for (const property of Object.values(schemaProperties)) {
-          fixBrokenLinksInDescription(property);
-        }
+    Schema: {
+      enter(schema) {
+        fixBrokenLinksInDescription(schema);
       },
     },
   };
@@ -24,7 +22,7 @@ function fixBrokenLinksInDescription(target) {
     return;
   }
 
-  target.description = description.replace(
+  target.description = description.replaceAll(
     /\[([^\]]+)\]\(\/([^\)]+)\)/g,
     (_, text, link) => `[${text}](https://docs.github.com/${link})`,
   );
