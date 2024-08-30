@@ -3,8 +3,8 @@ export function OperationSparkle() {
 
   return {
     Operation: {
-      enter(operation) {
-        if (operation.description && operation['x-github']?.category !== 'webhooks') {
+      leave(operation) {
+        if (operation.description) {
           operation.description = `✨ ${operation.description}`;
         }
       },
