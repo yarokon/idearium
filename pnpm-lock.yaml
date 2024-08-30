@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@redocly/realm':
-    specifier: 0.97.3
-    version: 0.97.3(@babel/runtime@7.25.4)(@codemirror/language@6.10.2)(@codemirror/search@6.5.6)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.2.1)(@types/node@22.5.0)(codemirror@6.0.1)(core-js@3.38.1)(highlight-words-core@1.2.2)(react-dom@18.3.1)(react-is@18.3.1)(react@18.3.1)(ts-jest@29.2.5)(typescript@5.5.4)
+    specifier: 0.97.6
+    version: 0.97.6(@babel/runtime@7.25.4)(@codemirror/language@6.10.2)(@codemirror/search@6.5.6)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.2.1)(@types/node@22.5.0)(codemirror@6.0.1)(core-js@3.38.1)(highlight-words-core@1.2.2)(react-dom@18.3.1)(react-is@18.3.1)(react@18.3.1)(ts-jest@29.2.5)(typescript@5.5.4)
 
 devDependencies:
   prettier:
@@ -1253,10 +1253,6 @@ packages:
       uri-js: 4.4.1
     dev: false
 
-  /@redocly/config@0.10.0:
-    resolution: {integrity: sha512-oFP8SL9qmsJ2QxwvOjI/h87hHMKq8G/RUbTSxF9/r4vbllCxzQ8Tla3xfUO/lGVVO6gZsAIsuJGXhaDagd4msg==}
-    dev: false
-
   /@redocly/config@0.10.1:
     resolution: {integrity: sha512-H3LnKVGzOaxskwJu8pmJYwBOWjP61qOK7TuTrbafqArDVckE06fhA6l0nO4KvBbjLPjy1Al7UnlxOu23V4Nl0w==}
     dev: false
@@ -1274,21 +1270,21 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
-  /@redocly/graphql-docs@0.6.53(@redocly/theme@0.40.5)(graphql@15.9.0)(prismjs@1.29.0)(react-dom@18.3.1)(react-router-dom@6.26.1)(react@18.3.1)(styled-components@5.3.11):
-    resolution: {integrity: sha512-GmaSBlJNwHju9epTm4AEsgfX2rYKdKhNPguowbPaN+CjV/v8tWoTHvn7ceFeQHUCew82O6TYkblZUeoBvGyjgg==}
+  /@redocly/graphql-docs@0.6.54(@redocly/theme@0.40.6)(graphql@16.9.0)(prismjs@1.29.0)(react-dom@18.3.1)(react-router-dom@6.26.1)(react@18.3.1)(styled-components@5.3.11):
+    resolution: {integrity: sha512-EgFv2q04WzmXkCLNu7Dl8ct/rULE7Hu1TC/QmKCcQTSxKVwmJfF2UClvNvqY0eT/jGc54DBY+HRPESWh9XOdKw==}
     peerDependencies:
       '@redocly/theme': ^0.40.0
-      graphql: ^15.6.1
+      graphql: ^16.9.0
       prismjs: ^1.29.0
       react: ^17.0.0 || ^18.0.0
       react-dom: ^17.0.0 || ^18.0.0
       react-router-dom: ^6.21.1
       styled-components: ^5.3.11
     dependencies:
-      '@redocly/config': 0.10.0
-      '@redocly/theme': 0.40.5(@markdoc/markdoc@0.4.0)(lodash.throttle@4.1.1)(prismjs@1.29.0)(react-dom@18.3.1)(react-router-dom@6.26.1)(react@18.3.1)(styled-components@5.3.11)(styled-system@5.1.5)
+      '@redocly/config': 0.10.1
+      '@redocly/theme': 0.40.6(@markdoc/markdoc@0.4.0)(lodash.throttle@4.1.1)(prismjs@1.29.0)(react-dom@18.3.1)(react-router-dom@6.26.1)(react@18.3.1)(styled-components@5.3.11)(styled-system@5.1.5)
       deepmerge: 4.3.1
-      graphql: 15.9.0
+      graphql: 16.9.0
       marked: 4.3.0
       prismjs: 1.29.0
       react: 18.3.1
@@ -1356,57 +1352,7 @@ packages:
       - supports-color
     dev: false
 
-  /@redocly/openapi-docs@3.3.8(@babel/runtime@7.25.4)(@codemirror/language@6.10.2)(@codemirror/search@6.5.6)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.2.1)(@redocly/theme@0.40.5)(codemirror@6.0.1)(core-js@3.38.1)(react-dom@18.3.1)(react@18.3.1)(styled-components@5.3.11):
-    resolution: {integrity: sha512-ErJQexpUhqscVxjLWLxH0wbUACRk+WKt4hM6E9BC0We/1+uGsA2J7zz5w1GUicYstM4Dlcyr+/0qKLhrKb2uoA==}
-    engines: {node: '>=12', npm: '>=6.0.0'}
-    hasBin: true
-    peerDependencies:
-      '@redocly/theme': '>=0.9.4'
-      core-js: ^3.1.4
-      react: ^18.0.0
-      react-dom: ^18.0.0
-      styled-components: ^4.1.1 || ^5.3.11
-    dependencies:
-      '@markdoc/markdoc': 0.4.0(react@18.3.1)
-      '@redocly/config': 0.10.0
-      '@redocly/openapi-core': 1.20.1
-      '@redocly/replay': 0.5.5(@babel/runtime@7.25.4)(@codemirror/language@6.10.2)(@codemirror/search@6.5.6)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.2.1)(@redocly/theme@0.40.5)(codemirror@6.0.1)(react-dom@18.3.1)(react-router-dom@6.26.1)(react@18.3.1)(styled-components@5.3.11)
-      '@redocly/theme': 0.40.5(@markdoc/markdoc@0.4.0)(lodash.throttle@4.1.1)(prismjs@1.29.0)(react-dom@18.3.1)(react-router-dom@6.26.1)(react@18.3.1)(styled-components@5.3.11)(styled-system@5.1.5)
-      core-js: 3.38.1
-      deepmerge: 4.3.1
-      dompurify: 2.5.6
-      fast-deep-equal: 3.1.3
-      jotai: 2.9.3(react@18.3.1)
-      json-pointer: 0.6.2
-      lunr: 2.3.9
-      openapi-sampler: 1.5.1
-      path-browserify: 1.0.1
-      prismjs: 1.29.0
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      react-router-dom: 6.26.1(react-dom@18.3.1)(react@18.3.1)
-      slugify: 1.6.6
-      stickyfill: 1.1.1
-      stringify-object: 3.3.0
-      styled-components: 5.3.11(@babel/core@7.25.2)(react-dom@18.3.1)(react-is@18.3.1)(react@18.3.1)
-      swagger2openapi: 7.0.8
-      tslib: 2.7.0
-      url: 0.11.4
-      url-template: 2.0.8
-      util: 0.12.5
-    transitivePeerDependencies:
-      - '@babel/runtime'
-      - '@codemirror/language'
-      - '@codemirror/search'
-      - '@codemirror/theme-one-dark'
-      - '@lezer/common'
-      - '@types/react'
-      - codemirror
-      - encoding
-      - supports-color
-    dev: false
-
-  /@redocly/openapi-docs@3.3.9(@babel/runtime@7.25.4)(@codemirror/language@6.10.2)(@codemirror/search@6.5.6)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.2.1)(@redocly/theme@0.40.5)(codemirror@6.0.1)(core-js@3.38.1)(react-dom@18.3.1)(react@18.3.1)(styled-components@5.3.11):
+  /@redocly/openapi-docs@3.3.9(@babel/runtime@7.25.4)(@codemirror/language@6.10.2)(@codemirror/search@6.5.6)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.2.1)(@redocly/theme@0.40.6)(codemirror@6.0.1)(core-js@3.38.1)(react-dom@18.3.1)(react@18.3.1)(styled-components@5.3.11):
     resolution: {integrity: sha512-MSDFbgESH/QljVLCYoBWaCOvNr/L7FBBjEAb2p4JneHWcUZ9lllh4YgKrgdMA4U4Ld+bCXdZn9u/JF6ZN8fZZw==}
     engines: {node: '>=12', npm: '>=6.0.0'}
     hasBin: true
@@ -1420,8 +1366,8 @@ packages:
       '@markdoc/markdoc': 0.4.0(react@18.3.1)
       '@redocly/config': 0.10.1
       '@redocly/openapi-core': 1.20.1
-      '@redocly/replay': 0.5.6(@babel/runtime@7.25.4)(@codemirror/language@6.10.2)(@codemirror/search@6.5.6)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.2.1)(@redocly/theme@0.40.5)(codemirror@6.0.1)(react-dom@18.3.1)(react-router-dom@6.26.1)(react@18.3.1)(styled-components@5.3.11)
-      '@redocly/theme': 0.40.5(@markdoc/markdoc@0.4.0)(lodash.throttle@4.1.1)(prismjs@1.29.0)(react-dom@18.3.1)(react-router-dom@6.26.1)(react@18.3.1)(styled-components@5.3.11)(styled-system@5.1.5)
+      '@redocly/replay': 0.5.6(@babel/runtime@7.25.4)(@codemirror/language@6.10.2)(@codemirror/search@6.5.6)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.2.1)(@redocly/theme@0.40.6)(codemirror@6.0.1)(react-dom@18.3.1)(react-router-dom@6.26.1)(react@18.3.1)(styled-components@5.3.11)
+      '@redocly/theme': 0.40.6(@markdoc/markdoc@0.4.0)(lodash.throttle@4.1.1)(prismjs@1.29.0)(react-dom@18.3.1)(react-router-dom@6.26.1)(react@18.3.1)(styled-components@5.3.11)(styled-system@5.1.5)
       core-js: 3.38.1
       deepmerge: 4.3.1
       dompurify: 2.5.6
@@ -1472,13 +1418,13 @@ packages:
       styled-system: 5.1.5
     dev: false
 
-  /@redocly/portal-plugin-mock-server@0.3.15(@babel/runtime@7.25.4)(@codemirror/language@6.10.2)(@codemirror/search@6.5.6)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.2.1)(@redocly/theme@0.40.5)(@types/node@22.5.0)(codemirror@6.0.1)(core-js@3.38.1)(react-dom@18.3.1)(react@18.3.1)(styled-components@5.3.11)(typescript@5.5.4):
+  /@redocly/portal-plugin-mock-server@0.3.15(@babel/runtime@7.25.4)(@codemirror/language@6.10.2)(@codemirror/search@6.5.6)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.2.1)(@redocly/theme@0.40.6)(@types/node@22.5.0)(codemirror@6.0.1)(core-js@3.38.1)(react-dom@18.3.1)(react@18.3.1)(styled-components@5.3.11)(typescript@5.5.4):
     resolution: {integrity: sha512-e6skLQiK4OqiLNmWFbolAPOVIzT9ajpcK7Nc2NxQD0ON4OfMKyJDL2J+5RxNxX43xUzrLCao16o95hEj48Vkvg==}
     dependencies:
       '@redocly/config': 0.10.1
       '@redocly/mock-server': 0.1.0(@types/node@22.5.0)(typescript@5.5.4)
       '@redocly/openapi-core': 1.20.1
-      '@redocly/openapi-docs': 3.3.9(@babel/runtime@7.25.4)(@codemirror/language@6.10.2)(@codemirror/search@6.5.6)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.2.1)(@redocly/theme@0.40.5)(codemirror@6.0.1)(core-js@3.38.1)(react-dom@18.3.1)(react@18.3.1)(styled-components@5.3.11)
+      '@redocly/openapi-docs': 3.3.9(@babel/runtime@7.25.4)(@codemirror/language@6.10.2)(@codemirror/search@6.5.6)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.2.1)(@redocly/theme@0.40.6)(codemirror@6.0.1)(core-js@3.38.1)(react-dom@18.3.1)(react@18.3.1)(styled-components@5.3.11)
     transitivePeerDependencies:
       - '@babel/runtime'
       - '@codemirror/language'
@@ -1500,8 +1446,8 @@ packages:
       - typescript
     dev: false
 
-  /@redocly/realm@0.97.3(@babel/runtime@7.25.4)(@codemirror/language@6.10.2)(@codemirror/search@6.5.6)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.2.1)(@types/node@22.5.0)(codemirror@6.0.1)(core-js@3.38.1)(highlight-words-core@1.2.2)(react-dom@18.3.1)(react-is@18.3.1)(react@18.3.1)(ts-jest@29.2.5)(typescript@5.5.4):
-    resolution: {integrity: sha512-8/kAqRyOOsw7ztSAIKL/qXaJV+khfDukYk6+zymnNUi6DEHfxZRCaR2ALwUeYLpsZV162RjPDDSDZsarveLYig==}
+  /@redocly/realm@0.97.6(@babel/runtime@7.25.4)(@codemirror/language@6.10.2)(@codemirror/search@6.5.6)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.2.1)(@types/node@22.5.0)(codemirror@6.0.1)(core-js@3.38.1)(highlight-words-core@1.2.2)(react-dom@18.3.1)(react-is@18.3.1)(react@18.3.1)(ts-jest@29.2.5)(typescript@5.5.4):
+    resolution: {integrity: sha512-rb5bjIx7QXi0g/j3dKgKYVDCfmfgxP1bInD49fRjWm3mAsFcepYR1iysnChkw2G6bN8Z2U9DEl0iIvGziIWqrQ==}
     hasBin: true
     peerDependencies:
       react: ^18.0.0
@@ -1511,14 +1457,14 @@ packages:
       '@cocalc/ansi-to-react': 7.0.0(react-dom@18.3.1)(react@18.3.1)
       '@markdoc/markdoc': 0.4.0(react@18.3.1)
       '@redocly/ajv': 8.11.0
-      '@redocly/config': 0.10.0
+      '@redocly/config': 0.10.1
       '@redocly/fuse.js': 7.0.1
-      '@redocly/graphql-docs': 0.6.53(@redocly/theme@0.40.5)(graphql@15.9.0)(prismjs@1.29.0)(react-dom@18.3.1)(react-router-dom@6.26.1)(react@18.3.1)(styled-components@5.3.11)
+      '@redocly/graphql-docs': 0.6.54(@redocly/theme@0.40.6)(graphql@16.9.0)(prismjs@1.29.0)(react-dom@18.3.1)(react-router-dom@6.26.1)(react@18.3.1)(styled-components@5.3.11)
       '@redocly/openapi-core': 1.20.1
-      '@redocly/openapi-docs': 3.3.8(@babel/runtime@7.25.4)(@codemirror/language@6.10.2)(@codemirror/search@6.5.6)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.2.1)(@redocly/theme@0.40.5)(codemirror@6.0.1)(core-js@3.38.1)(react-dom@18.3.1)(react@18.3.1)(styled-components@5.3.11)
+      '@redocly/openapi-docs': 3.3.9(@babel/runtime@7.25.4)(@codemirror/language@6.10.2)(@codemirror/search@6.5.6)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.2.1)(@redocly/theme@0.40.6)(codemirror@6.0.1)(core-js@3.38.1)(react-dom@18.3.1)(react@18.3.1)(styled-components@5.3.11)
       '@redocly/portal-legacy-ui': 0.1.1(highlight-words-core@1.2.2)(react-router-dom@6.26.1)(react@18.3.1)(styled-components@5.3.11)(styled-system@5.1.5)
-      '@redocly/portal-plugin-mock-server': 0.3.15(@babel/runtime@7.25.4)(@codemirror/language@6.10.2)(@codemirror/search@6.5.6)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.2.1)(@redocly/theme@0.40.5)(@types/node@22.5.0)(codemirror@6.0.1)(core-js@3.38.1)(react-dom@18.3.1)(react@18.3.1)(styled-components@5.3.11)(typescript@5.5.4)
-      '@redocly/theme': 0.40.5(@markdoc/markdoc@0.4.0)(lodash.throttle@4.1.1)(prismjs@1.29.0)(react-dom@18.3.1)(react-router-dom@6.26.1)(react@18.3.1)(styled-components@5.3.11)(styled-system@5.1.5)
+      '@redocly/portal-plugin-mock-server': 0.3.15(@babel/runtime@7.25.4)(@codemirror/language@6.10.2)(@codemirror/search@6.5.6)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.2.1)(@redocly/theme@0.40.6)(@types/node@22.5.0)(codemirror@6.0.1)(core-js@3.38.1)(react-dom@18.3.1)(react@18.3.1)(styled-components@5.3.11)(typescript@5.5.4)
+      '@redocly/theme': 0.40.6(@markdoc/markdoc@0.4.0)(lodash.throttle@4.1.1)(prismjs@1.29.0)(react-dom@18.3.1)(react-router-dom@6.26.1)(react@18.3.1)(styled-components@5.3.11)(styled-system@5.1.5)
       '@redocly/xml-crypto': 3.0.1
       '@tanstack/react-query': 4.0.5(react-dom@18.3.1)(react@18.3.1)
       '@wojtekmaj/react-datetimerange-picker': 5.5.0(react-dom@18.3.1)(react@18.3.1)
@@ -1533,7 +1479,7 @@ packages:
       esbuild: 0.17.19
       events: 3.3.0
       fflate: 0.7.4
-      graphql: 15.9.0
+      graphql: 16.9.0
       gray-matter: 4.0.3
       hono: 4.5.8
       htmlparser2: 8.0.2
@@ -1597,53 +1543,7 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@redocly/replay@0.5.5(@babel/runtime@7.25.4)(@codemirror/language@6.10.2)(@codemirror/search@6.5.6)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.2.1)(@redocly/theme@0.40.5)(codemirror@6.0.1)(react-dom@18.3.1)(react-router-dom@6.26.1)(react@18.3.1)(styled-components@5.3.11):
-    resolution: {integrity: sha512-KZJsAwbT2BLmK64cA4SRIiIO7Me0j2SH4egh3vXfWHB33+fL3ojtVR2CKm8/5Wzv2wpnringQRU9gS4idU1EQA==}
-    peerDependencies:
-      '@redocly/theme': 0.40.5
-      react: ^17.0.0 || ^18.0.0
-      react-dom: ^17.0.0 || ^18.0.0
-      react-router-dom: ^6.21.1
-      styled-components: ^5.3.11
-    dependencies:
-      '@codemirror/autocomplete': 6.18.0(@codemirror/language@6.10.2)(@codemirror/state@6.4.1)(@codemirror/view@6.33.0)(@lezer/common@1.2.1)
-      '@codemirror/lang-html': 6.4.9
-      '@codemirror/lang-json': 6.0.1
-      '@codemirror/lang-xml': 6.1.0
-      '@codemirror/lint': 6.8.1
-      '@codemirror/state': 6.4.1
-      '@codemirror/view': 6.33.0
-      '@hookstate/core': 4.0.1(react@18.3.1)
-      '@lezer/highlight': 1.2.1
-      '@redocly/theme': 0.40.5(@markdoc/markdoc@0.4.0)(lodash.throttle@4.1.1)(prismjs@1.29.0)(react-dom@18.3.1)(react-router-dom@6.26.1)(react@18.3.1)(styled-components@5.3.11)(styled-system@5.1.5)
-      '@redocly/vscode-json-languageservice': 3.4.9
-      '@tauri-apps/plugin-dialog': 2.0.0-beta.7
-      '@tauri-apps/plugin-fs': 2.0.0-rc.1
-      '@uiw/codemirror-theme-material': 4.23.0(@codemirror/language@6.10.2)(@codemirror/state@6.4.1)(@codemirror/view@6.33.0)
-      '@uiw/react-codemirror': 4.23.0(@babel/runtime@7.25.4)(@codemirror/autocomplete@6.18.0)(@codemirror/language@6.10.2)(@codemirror/lint@6.8.1)(@codemirror/search@6.5.6)(@codemirror/state@6.4.1)(@codemirror/theme-one-dark@6.1.2)(@codemirror/view@6.33.0)(codemirror@6.0.1)(react-dom@18.3.1)(react@18.3.1)
-      crypto-js: 4.2.0
-      dayjs: 1.11.13
-      js-yaml: 4.1.0
-      marked: 4.3.0
-      rc-tooltip: 6.2.0(react-dom@18.3.1)(react@18.3.1)
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      react-resizable-panels: 1.0.10(react-dom@18.3.1)(react@18.3.1)
-      react-router-dom: 6.26.1(react-dom@18.3.1)(react@18.3.1)
-      react-select: 5.8.0(react-dom@18.3.1)(react@18.3.1)
-      styled-components: 5.3.11(@babel/core@7.25.2)(react-dom@18.3.1)(react-is@18.3.1)(react@18.3.1)
-    transitivePeerDependencies:
-      - '@babel/runtime'
-      - '@codemirror/language'
-      - '@codemirror/search'
-      - '@codemirror/theme-one-dark'
-      - '@lezer/common'
-      - '@types/react'
-      - codemirror
-      - supports-color
-    dev: false
-
-  /@redocly/replay@0.5.6(@babel/runtime@7.25.4)(@codemirror/language@6.10.2)(@codemirror/search@6.5.6)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.2.1)(@redocly/theme@0.40.5)(codemirror@6.0.1)(react-dom@18.3.1)(react-router-dom@6.26.1)(react@18.3.1)(styled-components@5.3.11):
+  /@redocly/replay@0.5.6(@babel/runtime@7.25.4)(@codemirror/language@6.10.2)(@codemirror/search@6.5.6)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.2.1)(@redocly/theme@0.40.6)(codemirror@6.0.1)(react-dom@18.3.1)(react-router-dom@6.26.1)(react@18.3.1)(styled-components@5.3.11):
     resolution: {integrity: sha512-/2KI0LQJNF3l6JZho8FxlGZvGt6hG1t70MWT8iUr4B/5DxgvLpoGNMi4V++OzkAa/W3aliaSZaL2TvgWEEG6cg==}
     peerDependencies:
       '@redocly/theme': 0.40.6
@@ -1661,7 +1561,7 @@ packages:
       '@codemirror/view': 6.33.0
       '@hookstate/core': 4.0.1(react@18.3.1)
       '@lezer/highlight': 1.2.1
-      '@redocly/theme': 0.40.5(@markdoc/markdoc@0.4.0)(lodash.throttle@4.1.1)(prismjs@1.29.0)(react-dom@18.3.1)(react-router-dom@6.26.1)(react@18.3.1)(styled-components@5.3.11)(styled-system@5.1.5)
+      '@redocly/theme': 0.40.6(@markdoc/markdoc@0.4.0)(lodash.throttle@4.1.1)(prismjs@1.29.0)(react-dom@18.3.1)(react-router-dom@6.26.1)(react@18.3.1)(styled-components@5.3.11)(styled-system@5.1.5)
       '@redocly/vscode-json-languageservice': 3.4.9
       '@tauri-apps/plugin-dialog': 2.0.0-beta.7
       '@tauri-apps/plugin-fs': 2.0.0-rc.1
@@ -1689,8 +1589,8 @@ packages:
       - supports-color
     dev: false
 
-  /@redocly/theme@0.40.5(@markdoc/markdoc@0.4.0)(lodash.throttle@4.1.1)(prismjs@1.29.0)(react-dom@18.3.1)(react-router-dom@6.26.1)(react@18.3.1)(styled-components@5.3.11)(styled-system@5.1.5):
-    resolution: {integrity: sha512-5wcRbitl3oISKS5qU+igQpdBIj8XjibNr1rS2mnYk4viDldvZ4zSiLwOUu7m3Qyyp6TDcSVAPia2PVcfCMQzgg==}
+  /@redocly/theme@0.40.6(@markdoc/markdoc@0.4.0)(lodash.throttle@4.1.1)(prismjs@1.29.0)(react-dom@18.3.1)(react-router-dom@6.26.1)(react@18.3.1)(styled-components@5.3.11)(styled-system@5.1.5):
+    resolution: {integrity: sha512-IyOn/UwusAJx+9t7A35NVDQNcB5FAMfZFGBHQFW3CTihWlCa7bxgXcQdT/EyTgr0hqQ9RtaXZF807jtg1aOc3w==}
     peerDependencies:
       '@markdoc/markdoc': 0.4.0
       lodash.throttle: ^4.1.1
@@ -1702,7 +1602,7 @@ packages:
       styled-system: ^5.1.5
     dependencies:
       '@markdoc/markdoc': 0.4.0(react@18.3.1)
-      '@redocly/config': 0.10.0
+      '@redocly/config': 0.10.1
       copy-to-clipboard: 3.3.3
       highlight-words-core: 1.2.2
       hotkeys-js: 3.13.7
@@ -3100,9 +3000,9 @@ packages:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
     dev: false
 
-  /graphql@15.9.0:
-    resolution: {integrity: sha512-GCOQdvm7XxV1S4U4CGrsdlEN37245eC8P9zaYCMr6K1BG0IPGy5lUwmJsEOGyl1GD6HXjOtl2keCP9asRBwNvA==}
-    engines: {node: '>= 10.x'}
+  /graphql@16.9.0:
+    resolution: {integrity: sha512-GGTKBX4SD7Wdb8mqeDLni2oaRGYQWjWHGKPQ24ZMnUtKfcsVoiv4uX8+LJr1K6U5VW2Lu1BwJnj7uiori0YtRw==}
+    engines: {node: ^12.22.0 || ^14.16.0 || ^16.0.0 || >=17.0.0}
     dev: false
 
   /gray-matter@4.0.3:
