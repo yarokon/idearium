@@ -10,10 +10,6 @@ export function ExternalLinksFix() {
     Schema: {
       enter(schema) {
         fixBrokenLinksInDescription(schema);
-
-        if (schema.cvss_severities) {
-          delete schema.cvss_severities;
-        }
       },
     },
   };
