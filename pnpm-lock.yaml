@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@redocly/realm':
-    specifier: 0.97.7
-    version: 0.97.7(@babel/runtime@7.25.4)(@codemirror/language@6.10.2)(@codemirror/search@6.5.6)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.2.1)(@types/node@22.5.0)(codemirror@6.0.1)(core-js@3.38.1)(highlight-words-core@1.2.2)(react-dom@18.3.1)(react-is@18.3.1)(react@18.3.1)(ts-jest@29.2.5)(typescript@5.5.4)
+    specifier: 0.97.8
+    version: 0.97.8(@babel/runtime@7.25.4)(@codemirror/language@6.10.2)(@codemirror/search@6.5.6)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.2.1)(@types/node@22.5.0)(codemirror@6.0.1)(core-js@3.38.1)(highlight-words-core@1.2.2)(react-dom@18.3.1)(react-is@18.3.1)(react@18.3.1)(ts-jest@29.2.5)(typescript@5.5.4)
 
 devDependencies:
   prettier:
@@ -1446,8 +1446,8 @@ packages:
       - typescript
     dev: false
 
-  /@redocly/realm@0.97.7(@babel/runtime@7.25.4)(@codemirror/language@6.10.2)(@codemirror/search@6.5.6)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.2.1)(@types/node@22.5.0)(codemirror@6.0.1)(core-js@3.38.1)(highlight-words-core@1.2.2)(react-dom@18.3.1)(react-is@18.3.1)(react@18.3.1)(ts-jest@29.2.5)(typescript@5.5.4):
-    resolution: {integrity: sha512-WO5cYLuylGPoa1IqB8DYEa3aT/s6gioYbeiovq1lesKOZFd+IMC/xGjjnwKHAB4LfA8+zq0ZIpNXm5gyTvyRYg==}
+  /@redocly/realm@0.97.8(@babel/runtime@7.25.4)(@codemirror/language@6.10.2)(@codemirror/search@6.5.6)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.2.1)(@types/node@22.5.0)(codemirror@6.0.1)(core-js@3.38.1)(highlight-words-core@1.2.2)(react-dom@18.3.1)(react-is@18.3.1)(react@18.3.1)(ts-jest@29.2.5)(typescript@5.5.4):
+    resolution: {integrity: sha512-VFA6lW67Yt/Gel64ZHSJvVURvFRE1B4gT9gl8eCY64X+9rLWkKQ139/48heUGx9RbxQZAFFKQSO5tmv48n+OLw==}
     hasBin: true
     peerDependencies:
       react: ^18.0.0

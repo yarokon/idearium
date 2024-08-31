@@ -3,6 +3,7 @@
 ## What made you smile?
 
 - Completing this task for 3 hours 😅
+
 ## What did you find confusing?
 
 - We were not able to complete this training.

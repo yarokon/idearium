@@ -4,8 +4,10 @@ export function OperationSparkle() {
   return {
     Operation: {
       leave(operation) {
-        if (operation.description) {
-          operation.description = `✨ ${operation.description}`;
+        const { description } = operation;
+
+        if (description) {
+          operation.description = `✨ ${description}`;
         }
       },
     },

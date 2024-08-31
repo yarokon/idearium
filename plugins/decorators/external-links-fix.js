@@ -20,8 +20,8 @@ function fixBrokenLinksInDescription(target) {
 
   if (description) {
     target.description = description.replaceAll(
-      /\[([^\]]+)\]\(\/([^\)]+)\)/g,
-      (_, text, link) => `[${text}](https://docs.github.com/${link})`,
+      /\[([^\]]+)]\(\/([^)]+)\)/g,
+      '[$1](https://docs.github.com/$2)',
     );
   }
 }
