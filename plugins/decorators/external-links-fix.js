@@ -16,14 +16,12 @@ export function ExternalLinksFix() {
 }
 
 function fixBrokenLinksInDescription(target) {
-  const description = target.description;
+  const { description } = target;
 
-  if (!description) {
-    return;
+  if (description) {
+    target.description = description.replaceAll(
+      /\[([^\]]+)\]\(\/([^\)]+)\)/g,
+      (_, text, link) => `[${text}](https://docs.github.com/${link})`,
+    );
   }
-
-  target.description = description.replaceAll(
-    /\[([^\]]+)\]\(\/([^\)]+)\)/g,
-    (_, text, link) => `[${text}](https://docs.github.com/${link})`,
-  );
 }

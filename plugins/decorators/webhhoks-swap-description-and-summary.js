@@ -5,11 +5,14 @@ export function WebhooksSwapDescriptionAndSummary() {
     WebhooksMap: {
       Operation: {
         enter(operation) {
-          const description = operation.description ?? '';
-          const summary = operation.summary ?? '';
+          const { summary, description } = operation;
 
-          operation.summary = removeTextAfterDot(description);
-          operation.description = summary;
+          if (summary && description) {
+            operation.summary = removeTextAfterDot(description);
+            operation.description = summary;
+          } else if (!description) {
+            operation.summary = removeTextAfterDot(summary);
+          }
         },
       },
     },
