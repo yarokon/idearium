@@ -26,8 +26,9 @@ navbar:
       items:
         - page: /vendors/github/rest-api/api.github.com.yaml
           label: GitHub V3 REST API
-        - page: /vendors/github/schema.docs.graphql
+        - page: /vendors/github/graphql/schema.docs.graphql
           label: GitHub GraphQL API
+
 products:
   museum:
     name: Museum
