@@ -15,6 +15,7 @@ logo:
   altText: Idearium
   link: /
   favicon: images/favicon.ico
+
 navbar:
   items:
     - page: /products/api-hub/
@@ -36,6 +37,7 @@ products:
     name: API Hub
     icon: ./images/api-hub-logo.jpg
     folder: products/api-hub
+
 catalog:
   idearium-catalog:
     title: Idearium APIs catalog
@@ -54,6 +56,7 @@ catalog:
         flatten: true
         includeByMetadata:
           type: [openapi]
+
 scorecard:
   levels:
     - name: Baseline
@@ -81,10 +84,9 @@ scorecard:
     property: crew-name
     label: Crew
     default: No Crew
+
 feedback:
-  type: comment
-  settings:
-    label: Share your feedback with us
+  type: mood
 
 l10n:
   defaultLocale: en-US
@@ -100,7 +102,7 @@ rbac:
   content:
     '**':
       '*': read
-    'openapi/admin.yaml':
+    'products/api-hub/admin/admin.yaml':
       redocly.owners: maintain
       redocly.members: read
       'Beta Testers': read
