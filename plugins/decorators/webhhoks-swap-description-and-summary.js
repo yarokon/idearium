@@ -8,11 +8,11 @@ export function WebhooksSwapDescriptionAndSummary() {
           const { summary, description } = operation;
 
           if (summary && description) {
-            operation.summary = removeTextAfterDot(description);
+            operation.summary = description;
             operation.description = summary;
-          } else if (!description) {
-            operation.summary = removeTextAfterDot(summary);
           }
+
+          operation.summary = removeTextAfterDot(operation.summary);
         },
       },
     },
