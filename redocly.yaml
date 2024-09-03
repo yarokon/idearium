@@ -7,7 +7,7 @@ apis:
     root: vendors/github/rest-api/api.github.com.yaml
     decorators:
       github/external-links-fix: on
-      github/webhoks-swap-description-and-symmary: on
+      github/webhooks-swap-description-and-symmary: on
       sparkle/operation-sparkle: on
 
 logo:

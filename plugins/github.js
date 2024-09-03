@@ -7,7 +7,7 @@ export default function githubPlugin() {
     decorators: {
       oas3: {
         'external-links-fix': ExternalLinksFix,
-        'webhoks-swap-description-and-symmary': WebhooksSwapDescriptionAndSummary,
+        'webhooks-swap-description-and-symmary': WebhooksSwapDescriptionAndSummary,
       },
     },
   };
