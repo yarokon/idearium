@@ -32,6 +32,6 @@
 
 {% code-snippet file="/plugins/decorators/external-links-fix.js" title="external-links-fix.js" /%}
 
-{% code-snippet file="/plugins/decorators/webhhoks-swap-description-and-summary.js" title="webhhoks-swap-description-and-summary.js" /%}
+{% code-snippet file="/plugins/decorators/webhooks-swap-description-and-summary.js" title="webhooks-swap-description-and-summary.js" /%}
 
 </details>
