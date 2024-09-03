@@ -1,5 +1,5 @@
 import { ExternalLinksFix } from './decorators/external-links-fix.js';
-import { WebhooksSwapDescriptionAndSummary } from './decorators/webhhoks-swap-description-and-summary.js';
+import { WebhooksSwapDescriptionAndSummary } from './decorators/webhooks-swap-description-and-summary.js';
 
 export default function githubPlugin() {
   return {
