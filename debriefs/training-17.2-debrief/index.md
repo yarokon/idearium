@@ -34,4 +34,6 @@
 
 {% code-snippet file="/plugins/decorators/webhooks-swap-description-and-summary.js" title="webhooks-swap-description-and-summary.js" /%}
 
+{% code-snippet file="/plugins/decorators/operation-sparkle.js" title="operation-sparkle.js" /%}
+
 </details>

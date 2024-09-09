@@ -3,7 +3,7 @@ export function OperationSparkle() {
 
   return {
     Operation: {
-      leave(operation) {
+      enter(operation) {
         const { description } = operation;
 
         if (description) {
