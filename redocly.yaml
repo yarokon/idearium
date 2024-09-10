@@ -22,6 +22,8 @@ navbar:
       label: Catalog
     - page: /products/api-hub/scorecard/
       label: Scorecard
+    - page: /step-by-step/
+      label: Guide
     - group: Vendors
       items:
         - page: /vendors/github/rest-api/api.github.com.yaml
@@ -89,21 +91,21 @@ scorecard:
 feedback:
   type: mood
 
-l10n:
-  defaultLocale: en-US
-  locales:
-    - code: en-US
-      name: English
-    - code: fr-FR
-      name: French
+# l10n:
+#   defaultLocale: en-US
+#   locales:
+#     - code: en-US
+#       name: English
+#     - code: fr-FR
+#       name: French
 
 # requiresLogin: true
 
-rbac:
-  content:
-    '**':
-      '*': read
-    'products/api-hub/admin/admin.yaml':
-      redocly.owners: maintain
-      redocly.members: read
-      'Beta Testers': read
+# rbac:
+#   content:
+#     '**':
+#       '*': read
+#     'products/api-hub/admin/admin.yaml':
+#       redocly.owners: maintain
+#       redocly.members: read
+#       'Beta Testers': read
