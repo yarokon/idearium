@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { Markdown } from '@redocly/theme/components/Markdown/Markdown';
 
-export default function StepByStepLayout({ pageProps, children }) {
+export default function StepByStepLayout({ children }) {
   return (
     <Wrapper>
       <Markdown>{children}</Markdown>
@@ -12,5 +12,5 @@ export default function StepByStepLayout({ pageProps, children }) {
 }
 
 const Wrapper = styled.div`
-  padding: var(--spacing-xl)
+  padding: var(--spacing-xl);
 `;
