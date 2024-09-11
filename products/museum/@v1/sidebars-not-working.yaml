@@ -1,0 +1,6 @@
+- page: ./step-by-step.md
+  label: Step by Step
+- page: ./museum-guide.md
+  label: Museum Guide
+- page: museum.yaml
+  label: museum

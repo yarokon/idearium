@@ -22,6 +22,8 @@ navbar:
       label: Catalog
     - page: /products/api-hub/scorecard/
       label: Scorecard
+    - page: /step-by-step/
+      label: Guide
     - group: Vendors
       items:
         - page: /vendors/github/rest-api/api.github.com.yaml
