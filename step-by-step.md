@@ -11,7 +11,7 @@ template: './@theme/Templates/SideBySide.tsx'
 Open **Query** tab and set date appropriate date range using **startDate** and **endDate**.
 
 Click **Send** to get a list of all special events in the museum. Under Response body
-you will see a list of all special events.
+you will see a list of all special events. Pick one you would like to attend.
 
 ---
 
@@ -27,8 +27,8 @@ you will see a list of all special events.
   }
   parameters={
     query: {
-      startDate: "2024-01-01",
-      endDate: "2024-02-01",
+      startDate: "2024-09-01",
+      endDate: "2024-10-01",
       page: 1,
       limit: 30,
     },
@@ -46,7 +46,7 @@ you will see a list of all special events.
 1. Open **Body** tab
 2. Set **eventId** from the list of special events.
 3. Set **ticketDate** from the list of special events. We are going to remove this field in the future. Each event should't have a list of dates.
-4. Set your email.
+4. Set your **email**.
 
 Finaly click **Send** to buy a ticket for a special event.
 
