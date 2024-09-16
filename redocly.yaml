@@ -1,13 +1,10 @@
 plugins:
-  - plugins/github.js
   - plugins/sparkle.js
 
 apis:
   github-rest-api:
     root: vendors/github/rest-api/api.github.com.yaml
     decorators:
-      github/external-links-fix: on
-      github/webhooks-swap-description-and-symmary: on
       sparkle/operation-sparkle: on
 
 logo:
@@ -28,8 +25,6 @@ navbar:
       items:
         - page: /vendors/github/rest-api/api.github.com.yaml
           label: GitHub V3 REST API
-        - page: /vendors/github/graphql/schema.docs.graphql
-          label: GitHub GraphQL API
 
 products:
   museum:
@@ -90,14 +85,6 @@ scorecard:
 
 feedback:
   type: mood
-
-l10n:
-  defaultLocale: en-US
-  locales:
-    - code: en-US
-      name: English
-    - code: fr-FR
-      name: French
 
 # requiresLogin: true
 
